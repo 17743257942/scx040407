@@ -1,0 +1,8 @@
+package com.scx040407.untitled.practice.exception;
+
+public class MyException extends Exception {
+    public MyException(String message) {
+        super(message);
+    }
+
+}
