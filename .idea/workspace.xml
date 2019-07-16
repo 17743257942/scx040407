@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d3695d63-a324-4d74-9540-6386136d0cbc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice5/thread_demo/Demo.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/scx040407/untitled/practice5/thread_monk/Box.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/scx040407/untitled/practice5/thread_monk/Box.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/scx040407/untitled/practice5/thread_monk/Monk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/scx040407/untitled/practice5/thread_monk/Monk.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,7 +14,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/scx040407/untitled/practice5/thread_monk/Demo.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="198">
@@ -58,8 +56,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/scx040407/untitled/practice5/thread_monk/Monk.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="362">
-              <caret line="42" column="84" selection-start-line="42" selection-start-column="84" selection-end-line="42" selection-end-column="84" />
+            <state relative-caret-position="814">
+              <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
               <folding>
                 <element signature="e#270#271#0" expanded="true" />
                 <element signature="e#298#299#0" expanded="true" />
@@ -68,11 +66,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/scx040407/untitled/practice5/thread_monk/Box.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="18" column="30" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="30" />
+            <state relative-caret-position="389">
+              <caret line="42" column="46" selection-start-line="42" selection-start-column="46" selection-end-line="42" selection-end-column="46" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -89,6 +90,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>Charset</find>
+      <find>Monk6</find>
+      <find>最大</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -107,8 +110,8 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/scx040407/untitled/practice4/thread/new_artifact/delayqueue/DelayedTask.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/scx040407/untitled/practice5/thread_monk/Demo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/scx040407/untitled/practice5/thread_monk/Box.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/scx040407/untitled/practice5/thread_monk/Monk.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/scx040407/untitled/practice5/thread_monk/Box.java" />
       </list>
     </option>
   </component>
@@ -205,7 +208,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1563306817676" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1563307792740" />
     <property name="last_opened_file_path" value="E:/Program Files (x86)/Java/jdk1.8.0_201" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -274,7 +277,14 @@
       <option name="project" value="LOCAL" />
       <updated>1563305944838</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="asdf">
+      <created>1563306915058</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1563306915058</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -537,17 +547,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/scx040407/untitled/practice5/thread_monk/Box.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/scx040407/untitled/practice5/thread_monk/Demo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="18" column="30" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="30" />
+        <state relative-caret-position="198">
+          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/scx040407/untitled/practice5/thread_monk/Monk.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="42" column="84" selection-start-line="42" selection-start-column="84" selection-end-line="42" selection-end-column="84" />
+        <state relative-caret-position="814">
+          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
           <folding>
             <element signature="e#270#271#0" expanded="true" />
             <element signature="e#298#299#0" expanded="true" />
@@ -555,10 +565,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/scx040407/untitled/practice5/thread_monk/Demo.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/scx040407/untitled/practice5/thread_monk/Box.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+        <state relative-caret-position="389">
+          <caret line="42" column="46" selection-start-line="42" selection-start-column="46" selection-end-line="42" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
