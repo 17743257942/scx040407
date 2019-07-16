@@ -10,9 +10,14 @@ public class Box {
 
         int mcount = m.getCount();
 
-        //如果和尚吃了5个了，就告诉他篮子里没有馒头了
-        if (mcount == Monk.MAX) {
+        // 没有馒头了就返回0
+        if (count == 0) {
             return 0;
+        }
+
+        //如果和尚吃了5个了，就告诉他已经达到最大份额
+        if (mcount == Monk.MAX) {
+            return -1;
         }
 
         //调用一次就说明拿了一个馒头

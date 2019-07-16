@@ -36,12 +36,15 @@ public class Monk extends Thread {
                 e.printStackTrace();
             }
             // 如果篮子里馒头为0，返回；否则吃一个
-            if (n <= 0) {
-                System.out.println(name + "不能吃了，已经没有了或者达到最大份额");
+            if (n == 0) {
+                System.out.println(name + "不能吃了，已经没有了" );
+                return;
+            } else if (n == -1) {
+                System.out.println(name + "不能吃了，达到最大份额" );
                 return;
             } else {
                 count++;
-                System.out.println(name + ":  " + count + "   还有" + (n-1) + "个馒头");
+                System.out.println(name + ":  " + count + "   还有" + (n - 1) + "个馒头");
             }
 
         }
