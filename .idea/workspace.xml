@@ -5,8 +5,335 @@
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/scx040407.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/scx040407.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice5/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/scx040407/untitled/practice5/readme.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/Generator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/HelloWorld.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/ListGen.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/MapGen.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/Season.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/ZhouYi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/bigdata/Archiverlxx01/Archiveinput.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/bigdata/Archiverlxx01/Archiver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/bigdata/Archiverlxx01/Util.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/bigdata/Threadlxx02/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/bigdata/Threadlxx02/Consumer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/bigdata/Threadlxx02/Producer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/bigdata/Threadlxx02/TicketPool.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/bigdata/guidang/Archiver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/bigdata/guidang/Util.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/bigdata/it18zhang/archiver/Archiver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/bigdata/it18zhang/archiver/FileBean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/bigdata/it18zhang/archiver/Unarchiver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/bigdata/it18zhang/archiver/Util.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/bigdata/it18zhang/thread/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/bigdata/it18zhang/thread/Saler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/bigdata/it18zhang/thread/TicketPool.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/bigdata/it18zhang/thread/prodconsumer/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/bigdata/it18zhang/thread/prodconsumer/Consumer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/bigdata/it18zhang/thread/prodconsumer/Producer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/bigdata/it18zhang/thread/prodconsumer/TicketPool.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/bigdata/it18zhang/thread/prodconsumer/deadlock/DeadLockApp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/bigdata/prodconsumer/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/bigdata/prodconsumer/Consumer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/bigdata/prodconsumer/Producer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/bigdata/prodconsumer/TicketPool.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/AliTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/CollectionTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/InnerClassTest/AB/A.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/InnerClassTest/AB/B.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/InnerClassTest/AB/MultiInterfaces.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/InnerClassTest/AB/X.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/InnerClassTest/AB/Y.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/InnerClassTest/AnonymousConstructor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/InnerClassTest/Base.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/InnerClassTest/ClassInInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/InnerClassTest/ClassInInterfaceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/InnerClassTest/Contents.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/InnerClassTest/Destination.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/InnerClassTest/DoThis.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/InnerClassTest/Pacel8.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/InnerClassTest/Parcel4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/InnerClassTest/Selector.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/InnerClassTest/Sequence.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/InnerClassTest/TestParcel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/InnerClassTest/Wrapping.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/InnerClassTest/bibao/Callbacks.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/InnerClassTest/bibao/Callee1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/InnerClassTest/bibao/Callee2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/InnerClassTest/bibao/Caller.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/InnerClassTest/bibao/Incrementable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/InnerClassTest/bibao/MyIncrement.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/InnerClassTest/inheritinner/BigEgg2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/InnerClassTest/inheritinner/Egg2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/InnerClassTest/inheritinner/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/InnerClassTest/interfaces/A.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/InnerClassTest/interfaces/B.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/InnerClassTest/interfaces/X.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/InnerClassTest/interfaces/Y.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/InnerClassTest/interfaces/Z.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/InnerClassTest/localinner/Counter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/InnerClassTest/localinner/LocalInnerClass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/InnerClassTest/withinner/InheritInner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/InnerClassTest/withinner/WithInner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/RandomWords.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/ReflectTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/collection/iterator/AdapterMethodIdiom.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/collection/iterator/Collection2Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/collection/iterator/CollectionSequence.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/collection/iterator/ReversableArrayList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/collection/iterator/StringsIterator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/collection/list/Apple.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/collection/list/ApplesAndOrangesWithoutGenerics.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/collection/list/LinkedListTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/collection/list/Orange.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/collection/list/StackTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/collection/list/listTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/collection/list2/AsListInference.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/collection/list2/Crusty.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/collection/list2/Heavy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/collection/list2/Light.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/collection/list2/Powder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/collection/list2/Slush.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/collection/list2/Snow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/collection/set/QueueTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/collection/set/SetTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/exception/ExceptionTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/exception/ExceptionTest2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/exception/MyException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/factory/Factories.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/factory/Service.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/factory/ServiceFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/factory/ServiceImpl1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/factory/ServiceImpl2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/factory/ServiceImpl2Factory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/factory/ServiceImplFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/learnJava/Pig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/learnJava/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/nestedInterfaces/A.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/nestedInterfaces/E.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/nestedInterfaces/NestingInterfaces.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/state/Actor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/state/Actor2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/state/Actor3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/state/DateTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/state/Stage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/state/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/today/Encode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/today/HttpUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/util/AssembleUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/util/Base64Util.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/util/CharHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/util/CharTools.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/util/ConvertHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/util/DateHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/util/Escape.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/util/HttpHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/util/IpMacUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/util/MD5Code.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/util/MD5Util.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/util/MapHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/util/NumericHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/util/RandomHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/util/ReflectHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/util/StringHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/util/URLHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/util/UUID.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice/util/ValidateUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice2/class1/A.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice2/class1/B.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice2/class1/Base.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice2/class1/Derived.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice2/class1/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice2/exception/Rethrowing.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice2/exception/ReturnAndFinally.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice2/exception/SimpleException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice2/exception/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice2/exception/WhoCalled.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice2/gen/Sets/Sets.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice2/gen/Sets/WaterColorSets.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice2/gen/Sets/WaterColors.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice2/gen/SetsAndMaps/ContainerMethodDifferences.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice2/gen/bounds/BasicBounds.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice2/gen/bounds/Bounded.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice2/gen/bounds/Colored.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice2/gen/bounds/Colored2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice2/gen/bounds/ColoredDimension.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice2/gen/bounds/ColoredDimension2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice2/gen/bounds/Dimension.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice2/gen/bounds/HasColor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice2/gen/bounds/HoldItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice2/gen/bounds/InheritBounds.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice2/gen/bounds/Solid.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice2/gen/bounds/Solid2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice2/gen/bounds/Weight.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice2/gen/coffee/Americano.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice2/gen/coffee/Breve.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice2/gen/coffee/Coffee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice2/gen/coffee/CoffeeGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice2/gen/coffee/Coppuccino.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice2/gen/coffee/Latte.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice2/gen/coffee/Mocha.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice2/gen/covatriant/Apple.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice2/gen/covatriant/CovatriantArrays.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice2/gen/covatriant/Fruit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice2/gen/covatriant/Jonason.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice2/gen/covatriant/Orange.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice2/gen/dynamicproxy/DynamicProxyMixin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice2/gen/dynamicproxy/MixinProxy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice2/gen/dynamicproxy/TwoTuple.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice2/gen/factory/FactoryConstraint.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice2/gen/factory/FactoryI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice2/gen/factory/Foo2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice2/gen/factory/IntegerFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice2/gen/factory/Widget.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice2/gen/fib/Fibonacci.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice2/gen/fib/IterableFibonacci.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice2/gen/innerclass/BankTeller.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice2/gen/innerclass/Customer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice2/gen/innerclass/Teller.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice2/gen/method/GenericMethods.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice2/gen/performing/CommunicateReflectively.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice2/gen/performing/LatentReflection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice2/gen/performing/Mime.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice2/gen/performing/SmartDog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice2/gen/performs/Communicate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice2/gen/performs/Dog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice2/gen/performs/DogsAndRobots.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice2/gen/performs/PerformingDog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice2/gen/performs/Performs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice2/gen/performs/Robot.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice2/gen/test/Base.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice2/gen/test/CompilerfIntelligence.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice2/gen/test/CovariantReturnTypes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice2/gen/test/Derived.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice2/gen/test/DerivedGetter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice2/gen/test/Employee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice2/gen/test/GG.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice2/gen/test/GGTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice2/gen/test/Holder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice2/gen/test/Hourly.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice2/gen/test/OrdinaryGetter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice2/gen/test/Payable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice2/gen/test/Te.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice3/arrays/BerylliuSphere.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice3/arrays/ClassParameter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice3/arrays/ContainerComparison.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice3/arrays/CountingGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice3/arrays/GeneratorTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice3/arrays/MethodParameter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice3/arrays/ParameterizedArrayType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice3/collection/CollectionMethods.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice3/collection/Letters.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice3/collection/Lists.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice3/collection/MapData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice3/collection/MapDataTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice3/collection/Pair.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice3/collection/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice3/collection/Unsupported.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice3/collection/set/HashType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice3/collection/set/SetType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice3/collection/set/TreeType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice3/collection/set/TypesForSets.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice3/map/AssociativeArray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice3/map/LinkedHashMapDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice3/map/MapEntry.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice3/map/Maps.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice3/map/SimpleHashMap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice3/map/SlowMap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice3/test/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice3/test/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice3/test/TestParam.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice3/test/Tester.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice4/io/IOUtilTest1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice4/io/OSExecute.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice4/nio/GetChannel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/bank/BankTellerSimulation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/bank/Customer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/bank/CustomerGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/bank/CustomerLine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/bank/Teller.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/bank/TellerManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/blocker/Blocker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/blocker/NotifyVsNotifyAll.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/blocker/Task.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/blocker/Task2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/car/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/car/WaxOMatic.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/car/WaxOff.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/car/WaxOn.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/car2/Car2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/car2/WaxOMatic2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/car2/WaxOff2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/car2/WaxOn2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/carbuild/Assembler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/carbuild/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/carbuild/CarBuilder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/carbuild/CarQueue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/carbuild/ChassisBuilder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/carbuild/DriveTrainRobot.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/carbuild/EngineRobot.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/carbuild/Reporter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/carbuild/Robot.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/carbuild/RobotPool.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/carbuild/WheelRobot.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/chopstic/Chopstick.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/chopstic/DeadlockingDiningPhilosophers.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/chopstic/FixedDiningPhilosophers.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/chopstic/Philosopher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/cook/Chef.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/cook/Meal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/cook/Restaurant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/cook/WaitPerson.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/new_artifact/countdownlatch/CountDownLatchDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/new_artifact/countdownlatch/TaskPortion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/new_artifact/countdownlatch/WaitingTask.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/new_artifact/cyclebarrier/Horse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/new_artifact/cyclebarrier/HorseRace.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/new_artifact/delayqueue/DelayQueueDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/new_artifact/delayqueue/DelayedTask.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/new_artifact/delayqueue/DelayedTaskConsumer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/new_artifact/delayqueue/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/new_artifact/prioritizedtask/PrioritizedTask.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/new_artifact/scheduled/GreenhouseScheduler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/new_artifact/scheduled/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/pipe/PipedIO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/pipe/Receiver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/pipe/Sender.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/queue/LiftOff.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/queue/LiftOffRunner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/queue/TestBlockingQueues.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/restaurant/Chef.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/restaurant/Course.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/restaurant/Customer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/restaurant/Enums.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/restaurant/Food.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/restaurant/Order.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/restaurant/Plate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/restaurant/Restaurant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/restaurant/RestaurantWithQueues.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/restaurant/WaitPerson.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/toast/Butterer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/toast/Eater.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/toast/Jammer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/toast/Toast.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/toast/ToastMatic.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/toast/ToastQueue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/toast/Toaster.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice5/algorithm/BinaryTreeNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice5/algorithm/DLLNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice5/algorithm/JosephusPosition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice5/algorithm/ListNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice5/algorithm/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice5/readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice5/sourcecode/Collection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice5/sourcecode/MyArrayList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice5/sourcecode/MyLinkedList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice5/test/MyLinkedListTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/scx040407/untitled/practice5/thread_monk/Demo.java" beforeDir="false" />
     </list>
+    <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,28 +343,62 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/scx040407/untitled/practice5/test/MyLinkedListTest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/scx040407/untitled/practice5/thread_monk/Demo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-523">
-              <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
+            <state relative-caret-position="220">
+              <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/scx040407/untitled/practice5/thread_demo/Demo.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/scx040407/untitled/practice4/thread/new_artifact/delayqueue/DelayedTask.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+            <state relative-caret-position="364">
+              <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+              <folding>
+                <element signature="e#647#660#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/scx040407/untitled/practice/collection/iterator/AdapterMethodIdiom.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="6" column="64" selection-start-line="6" selection-start-column="64" selection-end-line="6" selection-end-column="64" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/scx040407/untitled/practice5/thread_monk/Monk.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="296">
+              <caret line="36" column="13" lean-forward="true" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+              <folding>
+                <element signature="e#270#271#0" expanded="true" />
+                <element signature="e#298#299#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/scx040407/untitled/practice5/readme.txt">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/scx040407/untitled/practice5/thread_monk/Box.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret lean-forward="true" />
+            <state relative-caret-position="213">
+              <caret line="21" column="42" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -62,8 +423,18 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/scx040407/untitled/practice5/thread_demo/Demo.java" />
         <option value="$PROJECT_DIR$/src/com/scx040407/untitled/practice5/readme.txt" />
+        <option value="$PROJECT_DIR$/src/com/scx040407/untitled/practice5/thread_demo/Box.java" />
+        <option value="$PROJECT_DIR$/src/com/scx040407/untitled/practice5/thread_demo/Monk.java" />
+        <option value="$PROJECT_DIR$/src/com/scx040407/untitled/practice5/thread_demo/Demo.java" />
+        <option value="$PROJECT_DIR$/src/com/scx040407/untitled/practice5/thread_monk/Demo.java" />
+        <option value="$PROJECT_DIR$/src/com/scx040407/untitled/practice5/thread_monk/Monk.java" />
+        <option value="$PROJECT_DIR$/src/com/scx040407/untitled/practice5/thread_monk/Box.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/scx040407/untitled/practice4/thread/new_artifact/delayqueue/DelayedTask.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/scx040407/untitled/practice5/thread_monk/Demo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/scx040407/untitled/practice5/thread_monk/Monk.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/scx040407/untitled/practice5/thread_monk/Box.java" />
       </list>
     </option>
   </component>
@@ -72,6 +443,13 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="953" />
@@ -103,21 +481,41 @@
               <item name="scx040407" type="b2602c69:ProjectViewProjectNode" />
               <item name="scx040407" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scx040407" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scx040407" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scx040407" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scx040407" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="untitled" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="scx040407" type="b2602c69:ProjectViewProjectNode" />
               <item name="scx040407" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="untitled" type="462c0819:PsiDirectoryNode" />
-              <item name="practice4" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="scx040407" type="b2602c69:ProjectViewProjectNode" />
-              <item name="scx040407" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="untitled" type="462c0819:PsiDirectoryNode" />
               <item name="practice5" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scx040407" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scx040407" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="untitled" type="462c0819:PsiDirectoryNode" />
+              <item name="practice5" type="462c0819:PsiDirectoryNode" />
+              <item name="thread_monk" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="scx040407" type="b2602c69:ProjectViewProjectNode" />
@@ -133,14 +531,14 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1563296194935" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../sparkstreaming" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1563305871660" />
+    <property name="last_opened_file_path" value="E:/Program Files (x86)/Java/jdk1.8.0_201" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.4610984" />
-    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -153,6 +551,26 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.scx040407.untitled.practice5.thread_monk.Demo" />
+      <module name="scx040407" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.scx040407.untitled.practice5.thread_monk.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Demo" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -168,6 +586,14 @@
       <workItem from="1550613951814" duration="596000" />
       <workItem from="1552132835302" duration="617000" />
     </task>
+    <task id="LOCAL-00001" summary="asdf">
+      <created>1563296215132</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1563296215132</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -184,9 +610,10 @@
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" weight="0.329718" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.329718" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -210,8 +637,12 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="asdf" />
+    <option name="LAST_COMMIT_MESSAGE" value="asdf" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/scx040407/untitled/practice4/nio/GetChannel.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/scx040407/untitled/practice4/nio/GetChannel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="616">
           <caret line="34" column="70" selection-start-line="34" selection-start-column="63" selection-end-line="34" selection-end-column="70" />
@@ -221,7 +652,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/bank/BankTellerSimulation.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/scx040407/untitled/practice4/thread/bank/BankTellerSimulation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="17" column="44" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
@@ -231,146 +662,146 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/scx040407/untitled/practice/exception/MyException.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/scx040407/untitled/practice/exception/MyException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/scx040407/untitled/practice/ReflectTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/scx040407/untitled/practice/ReflectTest.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/bank/Customer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/scx040407/untitled/practice4/thread/bank/Customer.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/scx040407/untitled/practice/exception/ExceptionTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/scx040407/untitled/practice/exception/ExceptionTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="49" selection-start-column="49" selection-end-column="49" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/scx040407/untitled/practice/exception/ExceptionTest2.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/scx040407/untitled/practice/exception/ExceptionTest2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/restaurant/RestaurantWithQueues.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/scx040407/untitled/practice4/thread/restaurant/RestaurantWithQueues.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/restaurant/Restaurant.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/scx040407/untitled/practice4/thread/restaurant/Restaurant.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/restaurant/WaitPerson.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/scx040407/untitled/practice4/thread/restaurant/WaitPerson.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/restaurant/Plate.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/scx040407/untitled/practice4/thread/restaurant/Plate.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/restaurant/Order.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/scx040407/untitled/practice4/thread/restaurant/Order.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/restaurant/Food.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/scx040407/untitled/practice4/thread/restaurant/Food.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
           <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/restaurant/Enums.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/scx040407/untitled/practice4/thread/restaurant/Enums.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/restaurant/Customer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/scx040407/untitled/practice4/thread/restaurant/Customer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/restaurant/Course.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/scx040407/untitled/practice4/thread/restaurant/Course.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
           <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/restaurant/Chef.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/scx040407/untitled/practice4/thread/restaurant/Chef.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/chopstic/Chopstick.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/scx040407/untitled/practice4/thread/chopstic/Chopstick.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="6" column="33" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/chopstic/Philosopher.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/scx040407/untitled/practice4/thread/chopstic/Philosopher.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
           <caret line="12" column="34" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/chopstic/FixedDiningPhilosophers.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/scx040407/untitled/practice4/thread/chopstic/FixedDiningPhilosophers.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
           <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/car/WaxOff.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/scx040407/untitled/practice4/thread/car/WaxOff.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
           <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/car/Car.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/scx040407/untitled/practice4/thread/car/Car.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/car/WaxOMatic.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/scx040407/untitled/practice4/thread/car/WaxOMatic.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/scx040407/untitled/practice4/thread/chopstic/DeadlockingDiningPhilosophers.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/scx040407/untitled/practice4/thread/chopstic/DeadlockingDiningPhilosophers.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
@@ -380,24 +811,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/scx040407/untitled/practice5/test/MyLinkedListTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/scx040407/untitled/practice5/test/MyLinkedListTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-523">
           <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/scx040407/untitled/practice5/thread_demo/Demo.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/scx040407/untitled/Generator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+        <state relative-caret-position="44">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/scx040407/untitled/practice5/readme.txt">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/scx040407/untitled/practice5/readme.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/scx040407/untitled/practice4/thread/new_artifact/delayqueue/DelayedTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+          <folding>
+            <element signature="e#647#660#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/scx040407/untitled/practice/collection/iterator/AdapterMethodIdiom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="64" selection-start-line="6" selection-start-column="64" selection-end-line="6" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/scx040407/untitled/practice5/thread_monk/Demo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/scx040407/untitled/practice5/thread_monk/Monk.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="36" column="13" lean-forward="true" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+          <folding>
+            <element signature="e#270#271#0" expanded="true" />
+            <element signature="e#298#299#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/scx040407/untitled/practice5/thread_monk/Box.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="21" column="42" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -479,6 +959,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>jdk1.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
