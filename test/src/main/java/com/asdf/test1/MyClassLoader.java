@@ -1,6 +1,7 @@
 package com.asdf.test1;
 
 import java.io.*;
+import java.lang.reflect.Method;
 import java.nio.ByteBuffer;
 import java.nio.channels.Channels;
 import java.nio.channels.FileChannel;
@@ -17,42 +18,39 @@ public class MyClassLoader extends ClassLoader {
         File file = new File(path);
         try {
             byte[] bytes = getClassBytes(file);
-            Class<?> c = this.defineClass(name, bytes, 0, bytes.length);
-            return c;
+            return defineClass(name, bytes, 0, bytes.length);
         } catch (Exception e) {
             e.printStackTrace();
         }
-
-        return super.findClass(name);
-
-
-//        return defineClass(name, bytes, 0, bytes.length);
-
+        return null;
     }
 
     private byte[] getClassBytes(File file) throws Exception {
         // 这里要读入.class的字节，因此要使用字节流
-        FileInputStream fis = new FileInputStream(file);
-        FileChannel fc = fis.getChannel();
-        ByteArrayOutputStream baos = new ByteArrayOutputStream();
-        WritableByteChannel wbc = Channels.newChannel(baos);
-        ByteBuffer by = ByteBuffer.allocate(1024);
+        FileInputStream fileInputStream = new FileInputStream(file);
+        FileChannel fileChannel = fileInputStream.getChannel();
+        ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+        WritableByteChannel writableByteChannel = Channels.newChannel(byteArrayOutputStream);
+        ByteBuffer byteBuffer = ByteBuffer.allocate(1024);
 
         while (true) {
-            int i = fc.read(by);
+            int i = fileChannel.read(byteBuffer);
             if (i == 0 || i == -1)
                 break;
-            by.flip();
-            wbc.write(by);
-            by.clear();
+            byteBuffer.flip();
+            writableByteChannel.write(byteBuffer);
+            byteBuffer.clear();
         }
 
-        fis.close();
+        fileInputStream.close();
 
-        return baos.toByteArray();
+        return byteArrayOutputStream.toByteArray();
     }
 
     public static void main(String[] args) throws Exception {
-        new MyClassLoader().findClass("Hello").newInstance();
+        Class<?> helloClass = new MyClassLoader().findClass("com.asdf.test1.Hello");
+        System.out.println(helloClass.getClassLoader()); //com.asdf.test1.MyClassLoader@1ee12a7
+        Method method = helloClass.getMethod("main", String[].class);
+        method.invoke(null, (Object) new String[]{""});
     }
 }
