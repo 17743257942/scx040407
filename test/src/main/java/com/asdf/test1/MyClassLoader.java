@@ -13,8 +13,8 @@ public class MyClassLoader extends ClassLoader {
     @Override
     protected Class<?> findClass(String name) throws ClassNotFoundException {
 //        String path = "E:\\study\\2021Java高级\\作业\\Hello.xlass";
-//        String path = "E:\\IdeaProjects\\scx040407\\test\\src\\main\\java\\com\\asdf\\test1\\Hello.xlass";
-        String path = "E:\\IdeaProjects\\scx040407\\test\\src\\main\\java\\com\\asdf\\test1\\Hello.class";
+        String path = "E:\\IdeaProjects\\scx040407\\test\\src\\main\\java\\com\\asdf\\test1\\Hello.xlass";
+//        String path = "E:\\IdeaProjects\\scx040407\\test\\src\\main\\java\\com\\asdf\\test1\\Hello.class";
         File file = new File(path);
         try {
             byte[] bytes = getClassBytes(file);
@@ -28,7 +28,8 @@ public class MyClassLoader extends ClassLoader {
     }
 
     private byte[] subByte255(byte[] bytes) {
-        byte[] result = new byte[1024];
+        int length = bytes.length;
+        byte[] result = new byte[length];
         for (int i = 0; i < bytes.length; i++) {
             result[i] = ((byte) (255 - bytes[i]));
         }
@@ -59,8 +60,9 @@ public class MyClassLoader extends ClassLoader {
 //        Method method = helloClass.getMethod("main", String[].class);
 //        method.invoke(null, (Object) new String[]{""});
         Class<?> helloClass = new MyClassLoader().findClass("com.asdf.test1.Hello");
+        System.out.println(helloClass.getClassLoader()); //com.asdf.test1.MyClassLoader@15fbaa4
         Method method = helloClass.getMethod("hello", null);
-        method.invoke(helloClass.newInstance(), null);
+        method.invoke(helloClass.newInstance(), null); //Hello, classLoader!
 
 
     }
