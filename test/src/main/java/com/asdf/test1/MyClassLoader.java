@@ -19,8 +19,8 @@ public class MyClassLoader extends ClassLoader {
         try {
             byte[] bytes = getClassBytes(file);
             // for every byte do : 255 - byte
-            bytes = subByte255(bytes);
-            return defineClass(name, bytes, 0, bytes.length);
+            byte[] result = subByte255(bytes);
+            return defineClass(name, result, 0, bytes.length);
         } catch (Exception e) {
             e.printStackTrace();
         }
