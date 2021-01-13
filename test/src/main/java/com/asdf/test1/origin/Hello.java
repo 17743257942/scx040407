@@ -1,4 +1,4 @@
-package com.asdf.test1;
+package com.asdf.test1.origin;
 
 public class Hello {
 

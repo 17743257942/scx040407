@@ -12,15 +12,15 @@ import java.util.List;
 public class MyClassLoader extends ClassLoader {
     @Override
     protected Class<?> findClass(String name) throws ClassNotFoundException {
-//        String path = "E:\\study\\2021Java高级\\作业\\Hello.xlass";
-        String path = "E:\\IdeaProjects\\scx040407\\test\\src\\main\\java\\com\\asdf\\test1\\Hello.xlass";
-//        String path = "E:\\IdeaProjects\\scx040407\\test\\src\\main\\java\\com\\asdf\\test1\\Hello.class";
+        String path = "E:\\IdeaProjects\\scx040407\\test\\src\\main\\java\\com\\asdf\\test1\\Hello.class"; // right class
+//        String path = "E:\\IdeaProjects\\scx040407\\test\\src\\main\\java\\com\\asdf\\test1\\Hello.class"; // turn from xlass
         File file = new File(path);
         try {
             byte[] bytes = getClassBytes(file);
             // for every byte do : 255 - byte
             byte[] result = subByte255(bytes);
-            return defineClass(name, result, 0, bytes.length);
+//            return defineClass(name, result, 0, bytes.length);
+            return defineClass(name, bytes, 0, bytes.length);
         } catch (Exception e) {
             e.printStackTrace();
         }
