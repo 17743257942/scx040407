@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d3695d63-a324-4d74-9540-6386136d0cbc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/src/main/java/com/asdf/test1/Hello.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/src/main/java/com/asdf/test1/Hello.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/src/main/java/com/asdf/test1/Hello.xlass" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/main/java/com/asdf/test1/Hello.class" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/main/java/com/asdf/test1/Hello.class_local" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/src/main/java/com/asdf/test1/MyClassLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/main/java/com/asdf/test1/MyClassLoader.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -21,20 +19,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/src/main/java/com/asdf/test1/MyClassLoader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="61" column="81" selection-start-line="61" selection-start-column="76" selection-end-line="61" selection-end-column="81" />
+            <state relative-caret-position="216">
+              <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/src/main/java/com/asdf/test1/localCompile/Hello.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="7" column="5" lean-forward="true" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -57,7 +46,7 @@
         <entry file="file://$PROJECT_DIR$/test/src/main/java/com/asdf/test1/Hello.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="144">
-              <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+              <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -149,8 +138,8 @@
         <option value="$PROJECT_DIR$/../scala_algorithm/src/main/java/test/MyClassLoader.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/test/pom.xml" />
-        <option value="$PROJECT_DIR$/test/src/main/java/com/asdf/test1/MyClassLoader.java" />
         <option value="$PROJECT_DIR$/test/src/main/java/com/asdf/test1/Hello.java" />
+        <option value="$PROJECT_DIR$/test/src/main/java/com/asdf/test1/MyClassLoader.java" />
       </list>
     </option>
   </component>
@@ -262,17 +251,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="asdf" type="462c0819:PsiDirectoryNode" />
               <item name="test1" type="462c0819:PsiDirectoryNode" />
-              <item name="localCompile" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="scx040407" type="b2602c69:ProjectViewProjectNode" />
-              <item name="scx040407" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="asdf" type="462c0819:PsiDirectoryNode" />
-              <item name="test1" type="462c0819:PsiDirectoryNode" />
               <item name="origin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -296,7 +274,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1610576788546" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1610577154794" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../java_scala_spark" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -494,7 +472,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610574748341</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="20210114">
+      <created>1610576931443</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1610576931443</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -511,6 +496,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1673774" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -598,17 +584,12 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="asdf" />
-    <option name="LAST_COMMIT_MESSAGE" value="asdf" />
+    <MESSAGE value="20210114" />
+    <option name="LAST_COMMIT_MESSAGE" value="20210114" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/test/src/main/java/com/asdf/test1/MyClassLoader.java</url>
-          <line>21</line>
-          <properties />
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>jar://E:/Program Files (x86)/Java/jdk1.8.0_201/src.zip!/java/lang/ClassLoader.java</url>
           <line>641</line>
@@ -938,7 +919,7 @@
     <entry file="file://$PROJECT_DIR$/test/src/main/java/com/asdf/test1/origin/Hello.class">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/src/main/java/com/asdf/test1/Hello.class">
+    <entry file="file://$PROJECT_DIR$/test/src/main/java/com/asdf/test1/Hello.class_local">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret lean-forward="true" />
@@ -948,14 +929,14 @@
     <entry file="file://$PROJECT_DIR$/test/src/main/java/com/asdf/test1/Hello.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
-          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/src/main/java/com/asdf/test1/MyClassLoader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="61" column="81" selection-start-line="61" selection-start-column="76" selection-end-line="61" selection-end-column="81" />
+        <state relative-caret-position="216">
+          <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
