@@ -12,14 +12,16 @@ import java.util.List;
 public class MyClassLoader extends ClassLoader {
     @Override
     protected Class<?> findClass(String name) throws ClassNotFoundException {
-        String path = "E:\\IdeaProjects\\scx040407\\test\\src\\main\\java\\com\\asdf\\test1\\Hello.class_local"; // right class
-//        String path = "E:\\IdeaProjects\\scx040407\\test\\src\\main\\java\\com\\asdf\\test1\\Hello.xlass"; // turn from xlass
+
+        String path0 = Test.class.getResource("").getPath().substring(1)
+                .replace("target/classes", "src/main/java")
+                .replace("/", "\\\\");
+        String path = path0 + "Hello.xlass"; // xlass
+
         File file = new File(path);
         try {
             byte[] bytes = getClassBytes(file);
-            // for every byte do : 255 - byte
-            byte[] result = subByte255(bytes);
-//            return defineClass(name, result, 0, bytes.length);
+            bytes = subByte255(bytes);
             return defineClass(name, bytes, 0, bytes.length);
         } catch (Exception e) {
             e.printStackTrace();
@@ -55,15 +57,9 @@ public class MyClassLoader extends ClassLoader {
     }
 
     public static void main(String[] args) throws Exception {
-//        Class<?> helloClass = new MyClassLoader().findClass("com.asdf.test1.Hello");
-//        System.out.println(helloClass.getClassLoader()); //com.asdf.test1.MyClassLoader@1ee12a7
-//        Method method = helloClass.getMethod("main", String[].class);
-//        method.invoke(null, (Object) new String[]{""});
-        Class<?> helloClass = new MyClassLoader().findClass("com.asdf.test1.Hello");
+        Class<?> helloClass = new MyClassLoader().findClass("Hello");
         System.out.println(helloClass.getClassLoader()); //com.asdf.test1.MyClassLoader@15fbaa4
-        Method method = helloClass.getMethod("hello", null);
-        method.invoke(helloClass.newInstance(), null); //Hello, classLoader!
-
-
+        Method method = helloClass.getMethod("hello");
+        method.invoke(helloClass.newInstance()); //Hello, classLoader!
     }
 }
