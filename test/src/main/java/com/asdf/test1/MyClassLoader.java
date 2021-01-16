@@ -13,7 +13,7 @@ public class MyClassLoader extends ClassLoader {
     @Override
     protected Class<?> findClass(String name) throws ClassNotFoundException {
 
-        String path0 = Test.class.getResource("").getPath().substring(1)
+        String path0 = MyClassLoader.class.getResource("").getPath().substring(1)
                 .replace("target/classes", "src/main/java")
                 .replace("/", "\\\\");
         String path = path0 + "Hello.xlass"; // xlass
