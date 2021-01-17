@@ -7,7 +7,7 @@
 *.iml
 out
 gen
-/target
-/test/target
-/test/test.iml
+target
+
+
 
