@@ -2,15 +2,7 @@ package com.asdf.test1;
 
 import org.springframework.core.io.ClassPathResource;
 
-import java.io.ByteArrayOutputStream;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
 import java.lang.reflect.Method;
-import java.nio.ByteBuffer;
-import java.nio.channels.Channels;
-import java.nio.channels.FileChannel;
-import java.nio.channels.WritableByteChannel;
 
 public class MyClassLoader2 extends ClassLoader {
     @Override
