@@ -1,0 +1,7 @@
+callback is
+i call you , you call me back
+
+1.xiaoming call helper
+2.helper do sth and call xiaoming
+3.xiaoming tell teacher the result, helper is behind and nobody know him
+
