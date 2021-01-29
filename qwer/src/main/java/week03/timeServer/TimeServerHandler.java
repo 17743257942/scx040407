@@ -33,20 +33,12 @@ public class TimeServerHandler implements Runnable {
                     break;
                 }
                 System.out.println("body=" + body);
-                currentTime = body.contains("querytimeorder")
-                        ? "====" + new Date(System.currentTimeMillis()).toString()
+                currentTime = "query time order".equalsIgnoreCase(body)
+                        ? "==currentTime==" + new Date(System.currentTimeMillis()).toString()
                         : "bad order";
-                if (body.contains("querytimeorder")) {
-                    break;
-                }
-//                System.out.println("currentTime=" + currentTime);
+                out.println(currentTime);
 
             }
-            out.println("HTTP/1.1 200 OK");
-            out.println("Content-Type:text/html;charset=utf-8");
-            out.println("Content-Length:" + body.getBytes().length);
-            out.write(currentTime);
-            out.println(currentTime);
 
         } catch (Exception e) {
             if (in != null) {
