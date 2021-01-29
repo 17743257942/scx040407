@@ -9,7 +9,12 @@ public class HttpServer02 {
         ServerSocket serverSocket = new ServerSocket(8802);
         while (true) {
             Socket socket = serverSocket.accept();
-            new Thread(() -> service(socket)).start();
+            new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    service(socket);
+                }
+            }).start();
         }
     }
 

@@ -12,8 +12,8 @@ public class TimeServer {
             Socket socket = null;
 
             while (true) {
-                socket = server.accept();
-                new Thread(new TimeServerHandler(socket)).start();
+                socket = server.accept(); //主线程获取客户端连接
+                new Thread(new TimeServerHandler(socket)).start(); //创建线程 启动线程
 
             }
         } finally {

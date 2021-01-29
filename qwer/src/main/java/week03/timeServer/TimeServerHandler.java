@@ -26,12 +26,18 @@ public class TimeServerHandler implements Runnable {
             while (true) {
                 body = in.readLine();
                 if (body == null) {
+                    System.out.println("----body is null----");
                     break;
                 }
-                System.out.println("the time server receive order : " + body);
-                currentTime = "query time order".equalsIgnoreCase(body)
-                        ? new Date(System.currentTimeMillis()).toString()
+                System.out.println("body=" + body);
+                currentTime = body.contains("querytimeorder")
+                        ? "====" + new Date(System.currentTimeMillis()).toString()
                         : "bad order";
+//                System.out.println("currentTime=" + currentTime);
+                out.println("HTTP/1.1 200 OK");
+                out.println("Content-Type:text/html;charset=utf-8");
+                out.println("Content-Length:" + body.getBytes().length);
+                out.write(currentTime);
                 out.println(currentTime);
             }
 
