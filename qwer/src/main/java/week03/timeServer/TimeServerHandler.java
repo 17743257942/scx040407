@@ -7,6 +7,9 @@ import java.io.PrintWriter;
 import java.net.Socket;
 import java.util.Date;
 
+/**
+ * http://localhost:8080/aa=querytimeorder
+ */
 public class TimeServerHandler implements Runnable {
     private Socket socket;
 
@@ -33,13 +36,17 @@ public class TimeServerHandler implements Runnable {
                 currentTime = body.contains("querytimeorder")
                         ? "====" + new Date(System.currentTimeMillis()).toString()
                         : "bad order";
+                if (body.contains("querytimeorder")) {
+                    break;
+                }
 //                System.out.println("currentTime=" + currentTime);
-                out.println("HTTP/1.1 200 OK");
-                out.println("Content-Type:text/html;charset=utf-8");
-                out.println("Content-Length:" + body.getBytes().length);
-                out.write(currentTime);
-                out.println(currentTime);
+
             }
+            out.println("HTTP/1.1 200 OK");
+            out.println("Content-Type:text/html;charset=utf-8");
+            out.println("Content-Length:" + body.getBytes().length);
+            out.write(currentTime);
+            out.println(currentTime);
 
         } catch (Exception e) {
             if (in != null) {
