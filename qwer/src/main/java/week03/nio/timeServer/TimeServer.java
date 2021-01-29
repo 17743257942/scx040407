@@ -1,4 +1,4 @@
-package week03.timeServer;
+package week03.nio.timeServer;
 
 import java.net.ServerSocket;
 import java.net.Socket;

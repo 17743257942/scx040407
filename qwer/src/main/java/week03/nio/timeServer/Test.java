@@ -1,4 +1,4 @@
-package week03.timeServer;
+package week03.nio.timeServer;
 
 public class Test {
     public static void main(String[] args) {

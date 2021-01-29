@@ -1,4 +1,4 @@
-package week03.timeClient;
+package week03.nio.timeClient;
 
 import java.io.BufferedReader;
 import java.io.IOException;
