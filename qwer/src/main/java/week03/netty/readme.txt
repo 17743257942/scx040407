@@ -5,6 +5,8 @@ Netty之ServerBootstrap的handler和childhandler的区别
 https://blog.csdn.net/jiezhang656/article/details/105197013/
 
 
+Netty系列学习
+https://blog.csdn.net/liujiahan629629/category_9282501.html
 
 
 服务端还是客户端都进行了handler的设置，通过添加hanlder，我们可以监听Channel的各种动作以及状态的改变，包括连接，绑定，接收消息等。
