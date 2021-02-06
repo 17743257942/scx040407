@@ -1,11 +1,6 @@
 package week03.netty.gateway.outbound.httpclient4;
 
 
-import io.github.kimmking.gateway.filter.HeaderHttpResponseFilter;
-import io.github.kimmking.gateway.filter.HttpRequestFilter;
-import io.github.kimmking.gateway.filter.HttpResponseFilter;
-import io.github.kimmking.gateway.router.HttpEndpointRouter;
-import io.github.kimmking.gateway.router.RandomHttpEndpointRouter;
 import io.netty.buffer.Unpooled;
 import io.netty.channel.ChannelFutureListener;
 import io.netty.channel.ChannelHandlerContext;
@@ -22,6 +17,7 @@ import org.apache.http.impl.nio.reactor.IOReactorConfig;
 import org.apache.http.protocol.HTTP;
 import org.apache.http.util.EntityUtils;
 import week03.netty.gateway.filter.HeaderHttpResponseFilter;
+import week03.netty.gateway.filter.HttpRequestFilter;
 import week03.netty.gateway.filter.HttpResponseFilter;
 import week03.netty.gateway.router.HttpEndpointRouter;
 import week03.netty.gateway.router.RandomHttpEndpointRouter;
