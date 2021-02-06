@@ -58,12 +58,13 @@ public class NettyHttpServer {
                     .channel(NioServerSocketChannel.class)
                     //打印出LoggingHandler中的日志 可以对入站\出站事件进行日志记录，从而方便我们进行问题排查。
                     .handler(new LoggingHandler(LogLevel.INFO))
-                    //一定要使用 childHandler 去绑定具体的 事件处理器
+                    //建立连接后做初始化工作 ；一定要使用 childHandler 去绑定具体的 事件处理器
                     .childHandler(new HttpInitializer());
+            //启动server sync表示阻塞，启动是一个异步的过程，要等启动完才能执行下一步
             //绑定指定的端口 进行监听 ChannelFuture f = b.bind(port).sync();
             Channel ch = b.bind(port).sync().channel();
             System.out.println("开启netty http服务器，监听地址和端口为 http://127.0.0.1:" + port + '/');
-            //Thread.sleep(1000000); f.channel().closeFuture().sync();
+            //wait until the server socket is closed; Thread.sleep(1000000); f.channel().closeFuture().sync();
             ch.closeFuture().sync();
         } finally {
             bossGroup.shutdownGracefully();
