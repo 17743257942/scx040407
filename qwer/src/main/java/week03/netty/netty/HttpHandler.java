@@ -17,7 +17,7 @@ import static io.netty.handler.codec.http.HttpResponseStatus.OK;
 import static io.netty.handler.codec.http.HttpVersion.HTTP_1_1;
 
 public class HttpHandler extends ChannelInboundHandlerAdapter {
-    
+
     @Override
     public void channelReadComplete(ChannelHandlerContext ctx) {
         ctx.flush();
@@ -33,8 +33,8 @@ public class HttpHandler extends ChannelInboundHandlerAdapter {
             if (uri.contains("/test")) {
                 handlerTest(fullRequest, ctx);
             }
-    
-        } catch(Exception e) {
+
+        } catch (Exception e) {
             e.printStackTrace();
         } finally {
             ReferenceCountUtil.release(msg);
@@ -45,7 +45,7 @@ public class HttpHandler extends ChannelInboundHandlerAdapter {
         FullHttpResponse response = null;
         try {
             // 对接上次作业的httpclient或者okhttp请求另一个url的响应数据
-            String value = null; // "hello,kimmking";
+            String value = "hello,kimmking";
 
 //            httpGet ...  http://localhost:8801
 //            返回的响应，"hello,nio";
@@ -57,7 +57,7 @@ public class HttpHandler extends ChannelInboundHandlerAdapter {
             response.headers().setInt("Content-Length", response.content().readableBytes());
 
         } catch (Exception e) {
-            System.out.println("处理出错:"+e.getMessage());
+            System.out.println("处理出错:" + e.getMessage());
             response = new DefaultFullHttpResponse(HTTP_1_1, NO_CONTENT);
         } finally {
             if (fullRequest != null) {
