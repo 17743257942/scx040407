@@ -1,4 +1,4 @@
-package week03.nio.timeServerAsync;
+package week03.nio.timeServerAsync.server;
 
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
@@ -9,6 +9,16 @@ import java.nio.channels.AsynchronousSocketChannel;
 import java.nio.channels.CompletionHandler;
 import java.util.Date;
 
+/**
+ * Interface CompletionHandler<V,A>
+ *
+ * Type Parameters:
+ * V - The result type of the I/O operation
+ * A - The type of the object attached to the I/O operation
+ *
+ * example: V socket  A serverSocket
+ * completed(AsynchronousSocketChannel result, AsyncTimeServerHandler attachment)
+ */
 public class ReadCompletionHandler implements CompletionHandler
         <Integer, ByteBuffer> {
     private AsynchronousSocketChannel channel;
@@ -43,7 +53,16 @@ public class ReadCompletionHandler implements CompletionHandler
         ByteBuffer writeBuffer = ByteBuffer.allocate(bytes.length);
         writeBuffer.put(bytes);
         writeBuffer.flip();
-        channel.write(writeBuffer, writeBuffer,
+        //This method initiates an asynchronous write operation to
+        // write a sequence of bytes to this channel from the given buffer.
+        //Parameters:
+        //src - The buffer from which bytes are to be retrieved
+        //attachment - The object to attach to the I/O operation; can be null
+        //handler - The completion handler object
+        channel.write(
+                writeBuffer,
+                writeBuffer,
+                //A handler for consuming the result of an asynchronous I/O operation.
                 new CompletionHandler<Integer, ByteBuffer>() {
                     @Override
                     public void completed(Integer result, ByteBuffer attachment) {
