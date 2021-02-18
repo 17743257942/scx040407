@@ -127,6 +127,7 @@ public class HttpOutboundHandler {
 
             filter.filter(response);
 
+
 //            for (Header e : endpointResponse.getAllHeaders()) {
 //                //response.headers().set(e.getName(),e.getValue());
 //                System.out.println(e.getName() + " => " + e.getValue());

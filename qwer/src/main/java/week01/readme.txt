@@ -24,6 +24,7 @@ for，然后自己分析一下对应的字节码，有问题群里讨论。
 mac上可以用wrk，windows上可以按照superbenchmark压测
 http://localhost:8088/api/hello 查看jvm。
 
+git config --global credential.helper store
 git init
 git pull
 git status
@@ -31,6 +32,8 @@ git add .
 git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/17743257942/JAVA01.git
+git config --global --unset http.proxy
+git config --global --unset https.proxy
 git push -u origin main
 
 jvm 123
