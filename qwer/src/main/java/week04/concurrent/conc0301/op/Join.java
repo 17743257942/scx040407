@@ -1,5 +1,7 @@
 package week04.concurrent.conc0301.op;
 
+import java.util.concurrent.atomic.AtomicBoolean;
+
 public class Join {
     
     public static void main(String[] args) {
@@ -7,6 +9,7 @@ public class Join {
     
         MyThread thread1 = new MyThread("thread1 -- ");
 //        oo = thread1;
+        oo = new AtomicBoolean(false);
         thread1.setOo(oo);
         thread1.start();
         
@@ -15,7 +18,9 @@ public class Join {
                 if (i == 10) {
                     try {
                         oo.wait(0);
-                        thread1.join();
+                        System.out.println("i am wake up");
+                        thread1.join(); //do nothing
+                        System.out.println("thread join over");
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
@@ -45,7 +50,7 @@ class MyThread extends Thread {
     
     @Override
     public void run() {
-        synchronized (oo) {
+        synchronized (this) {
             for (int i = 0; i < 50; i++) {
                 System.out.println(name + i);
             }
