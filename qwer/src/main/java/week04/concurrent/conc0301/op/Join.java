@@ -6,7 +6,7 @@ public class Join {
         Object oo = new Object();
     
         MyThread thread1 = new MyThread("thread1 -- ");
-        //oo = thread1;
+//        oo = thread1;
         thread1.setOo(oo);
         thread1.start();
         
@@ -14,9 +14,8 @@ public class Join {
             for (int i = 0; i < 20; i++) {
                 if (i == 10) {
                     try {
-//                        oo.wait(0);
+                        oo.wait(0);
                         thread1.join();
-//                        run2(oo);
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
@@ -28,14 +27,7 @@ public class Join {
 
     }
 
-    public static void run2(Object oo) {
-        synchronized (oo) {
-            for (int i = 0; i < 50; i++) {
-                System.out.println("run2 -- " + i);
-            }
-        }
-    }
-    
+
 }
 
 class MyThread extends Thread {
