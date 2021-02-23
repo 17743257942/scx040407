@@ -17,9 +17,9 @@ public class Join {
             for (int i = 0; i < 20; i++) {
                 if (i == 10) {
                     try {
-                        oo.wait(0);
+                        oo.wait(0); // oo/thread1 wait
                         System.out.println("i am wake up");
-                        thread1.join(); //do nothing
+                        thread1.join(); //do nothing but wait() notifyAll(), so lock(oo/thread1) alive
                         System.out.println("thread join over");
                     } catch (Exception e) {
                         e.printStackTrace();
