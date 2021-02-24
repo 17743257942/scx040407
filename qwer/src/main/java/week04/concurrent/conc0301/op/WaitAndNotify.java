@@ -37,7 +37,7 @@ public class WaitAndNotify {
 class MethodClass {
     // 定义生产最大量
     private final int MAX_COUNT = 20;
-    
+
     int productCount = 0;
     
     public synchronized void product() throws InterruptedException {
@@ -51,7 +51,7 @@ class MethodClass {
             }else {
                 productCount++;
             }
-            
+            System.out.println("product notifyAll...");
             notifyAll();
         }
     }
@@ -66,7 +66,7 @@ class MethodClass {
             }else {
                 productCount--;
             }
-            
+            System.out.println("customer notifyAll...");
             notifyAll();
         }
     }
