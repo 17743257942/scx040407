@@ -13,7 +13,9 @@ for，然后自己分析一下对应的字节码，有问题群里讨论。
 1、对于线上有流量的系统，慎重使用jmap命令。
 2、如果没有线上系统，可以自己 run 一个 web/java 项目。或者直接查看idea进程。
 课堂重点知识笔记和答疑链接，请在群里找或者向班主任索要。
-第 2 节课作业实践 1、本机使用 G1 GC 启动一个程序，仿照课上案例分析一下 JVM 情况
+
+第 2 节课作业实践
+1、本机使用 G1 GC 启动一个程序，仿照课上案例分析一下 JVM 情况
 可以使用gateway-server-0.0.1-SNAPSHOT.jar 注意关闭自适应参数：-XX:-UseAdaptiveSizePolicy
 > java -Xmx1g -Xms1g -XX:-UseAdaptiveSizePolicy -XX:+UseSerialGC
 -jar target/gateway-server- 0.0.1-SNAPSHOT.jar
