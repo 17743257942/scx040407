@@ -31,5 +31,12 @@ spring两大核心：
 ioc 根据配置文件使用工厂模式通过反射来创建对象
 aop 使用动态代理在方法前后做一些事情，或者异常处理等。常用的场景有事务，权限，日志等
 
-
+事务传播特性：
+propagation_required
+propagation_supports
+propagation_mandatory
+propagation_requires_new
+propagation_not_supported
+propagation_never
+propagation_nested
 
