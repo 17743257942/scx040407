@@ -27,4 +27,9 @@ Student/Klass/School。
 2. (挑战)自定义实现一个数据库连接池，并整合 Hibernate/Mybatis/Spring/SpringBoot。
 3. (挑战)基于 MyBatis 实现一个简单的分库分表+读写分离+分布式 ID 生成方案。
 
+spring两大核心：
+ioc 根据配置文件使用工厂模式加反射来创建对象
+aop 使用动态代理在方法前后做一些事情，或者异常处理等。常用的场景有事务，权限，日志等
+
+
 

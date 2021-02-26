@@ -1,4 +1,4 @@
-package _4_thread._1;
+package _4_thread.test;
 
 public class Test {
     public static void main(String[] args) {
