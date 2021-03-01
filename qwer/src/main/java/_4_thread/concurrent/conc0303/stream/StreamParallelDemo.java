@@ -16,13 +16,12 @@ public class StreamParallelDemo {
                 .map(i -> i.longValue())
                 .sorted()
                 .collect(Collectors.toList());
-//      // 串行，单线程
-//      longList.stream().forEach(
-        // 并行，默认使用CPU * 2个线程
-        longList.stream().forEach(
+
+        longList.stream().parallel().forEach(
                 i -> {
             try {
                 blockingQueue.put(i);
+                System.out.println(Thread.currentThread().getName()+"====");
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
