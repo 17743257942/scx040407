@@ -1,6 +1,5 @@
 package _5_spring.lambdasinaction.chap5;
 
-import lambdasinaction.chap5.*;
 
 import java.util.*;
 
