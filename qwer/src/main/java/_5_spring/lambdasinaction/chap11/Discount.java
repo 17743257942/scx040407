@@ -1,7 +1,7 @@
 package _5_spring.lambdasinaction.chap11;
 
-import static lambdasinaction.chap11.Util.delay;
-import static lambdasinaction.chap11.Util.format;
+import static _5_spring.lambdasinaction.chap11.Util.delay;
+import static _5_spring.lambdasinaction.chap11.Util.format;
 
 public class Discount {
 

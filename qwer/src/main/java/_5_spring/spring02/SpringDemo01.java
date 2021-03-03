@@ -1,6 +1,5 @@
 package _5_spring.spring02;
 
-import _5_spring.aop.ISchool;
 import _5_spring.spring01.Student;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

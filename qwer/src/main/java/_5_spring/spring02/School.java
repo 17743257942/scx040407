@@ -1,7 +1,6 @@
 package _5_spring.spring02;
 
 import _5_spring.spring01.Student;
-import _5_spring.aop.ISchool;
 import lombok.Data;
 import org.springframework.beans.factory.annotation.Autowired;
 

@@ -16,9 +16,9 @@
 
 package _5_spring.lambdasinaction.dsl;
 
-import lambdasinaction.dsl.model.Order;
-import lambdasinaction.dsl.model.Stock;
-import lambdasinaction.dsl.model.Trade;
+import _5_spring.lambdasinaction.dsl.model.Order;
+import _5_spring.lambdasinaction.dsl.model.Stock;
+import _5_spring.lambdasinaction.dsl.model.Trade;
 
 import java.util.function.Consumer;
 import java.util.stream.Stream;

@@ -1,6 +1,6 @@
 package _5_spring.winterbe.java8.samples.nashorn;
 
-import winterbe.java8.samples.lambda.Person;
+import _5_spring.winterbe.java8.samples.lambda.Person;
 
 import javax.script.Invocable;
 import javax.script.ScriptEngine;

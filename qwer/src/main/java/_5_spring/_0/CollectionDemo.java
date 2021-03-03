@@ -30,7 +30,9 @@ public class CollectionDemo {
     }
     
     private static void print(List<Integer> list) {
-        System.out.println(String.join(",",list.stream().map(i -> i.toString()).collect(Collectors.toList()).toArray(new String[]{})));  
+        System.out.println(String.join(",",
+                list.stream().map(i -> i.toString()).collect(Collectors.toList()).toArray(new String[]{})
+        ));
     }
     
 }

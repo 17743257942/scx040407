@@ -16,11 +16,11 @@
 
 package _5_spring.lambdasinaction.dsl;
 
-import lambdasinaction.dsl.model.Order;
+import _5_spring.lambdasinaction.dsl.model.Order;
 
-import static lambdasinaction.dsl.MixedBuilder.buy;
-import static lambdasinaction.dsl.MixedBuilder.sell;
-import static lambdasinaction.dsl.MixedBuilder.forCustomer;
+import static _5_spring.lambdasinaction.dsl.MixedBuilder.buy;
+import static _5_spring.lambdasinaction.dsl.MixedBuilder.sell;
+import static _5_spring.lambdasinaction.dsl.MixedBuilder.forCustomer;
 
 public class Mixed {
     public void mixed() {

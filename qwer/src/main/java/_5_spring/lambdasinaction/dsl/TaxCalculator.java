@@ -16,8 +16,8 @@
 
 package _5_spring.lambdasinaction.dsl;
 
-import lambdasinaction.dsl.model.Order;
-import lambdasinaction.dsl.model.Tax;
+import _5_spring.lambdasinaction.dsl.model.Order;
+import _5_spring.lambdasinaction.dsl.model.Tax;
 
 import java.util.function.Function;
 

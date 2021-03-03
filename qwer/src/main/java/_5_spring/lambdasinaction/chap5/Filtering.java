@@ -1,11 +1,11 @@
 package _5_spring.lambdasinaction.chap5;
-import lambdasinaction.chap4.*;
+import _5_spring.lambdasinaction.chap4.*;
 
 import java.util.stream.*;
 import java.util.*;
 import static java.util.stream.Collectors.toList;
 
-import static lambdasinaction.chap4.Dish.menu;
+import static _5_spring.lambdasinaction.chap4.Dish.menu;
 
 public class Filtering{
 
