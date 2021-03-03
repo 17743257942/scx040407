@@ -1,7 +1,7 @@
 package _5_spring.lambdasinaction.chap6;
 
 import static java.util.stream.Collectors.*;
-import static lambdasinaction.chap6.Dish.menu;
+import static _5_spring.lambdasinaction.chap6.Dish.menu;
 
 public class Reducing {
 

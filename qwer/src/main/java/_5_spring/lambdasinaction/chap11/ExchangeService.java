@@ -1,6 +1,6 @@
 package _5_spring.lambdasinaction.chap11;
 
-import static lambdasinaction.chap11.Util.delay;
+import static _5_spring.lambdasinaction.chap11.Util.delay;
 
 public class ExchangeService {
 

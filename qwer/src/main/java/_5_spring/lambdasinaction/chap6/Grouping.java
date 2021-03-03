@@ -3,8 +3,8 @@ package _5_spring.lambdasinaction.chap6;
 import java.util.*;
 
 import static java.util.stream.Collectors.*;
-import static lambdasinaction.chap6.Dish.dishTags;
-import static lambdasinaction.chap6.Dish.menu;
+import static _5_spring.lambdasinaction.chap6.Dish.dishTags;
+import static _5_spring.lambdasinaction.chap6.Dish.menu;
 
 public class Grouping {
 
