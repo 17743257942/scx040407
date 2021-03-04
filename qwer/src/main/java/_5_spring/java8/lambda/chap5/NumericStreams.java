@@ -1,6 +1,5 @@
 package _5_spring.java8.lambda.chap5;
 import _5_spring.java8.lambda.chap4.Dish;
-import _5_spring.lambda.chap4.*;
 
 import java.util.stream.*;
 import java.util.*;

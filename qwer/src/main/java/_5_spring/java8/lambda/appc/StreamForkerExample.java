@@ -1,7 +1,6 @@
 package _5_spring.java8.lambda.appc;
 
 import _5_spring.java8.lambda.chap6.Dish;
-import _5_spring.lambda.chap6.*;
 
 import static java.util.stream.Collectors.*;
 

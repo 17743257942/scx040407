@@ -3,7 +3,8 @@ package _5_spring.java8.lambda.chap10;
 
 import org.junit.Test;
 
-import java.util.*;
+import java.util.Optional;
+import java.util.Properties;
 
 import static java.util.Optional.*;
 import static org.junit.Assert.assertEquals;
