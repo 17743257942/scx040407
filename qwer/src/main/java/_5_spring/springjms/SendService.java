@@ -1,7 +1,7 @@
 package _5_spring.springjms;
 
 import com.alibaba.fastjson.JSON;
-import _5_spring.spring01.Student;
+import _5_spring.java8.guava.Student;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jms.core.JmsTemplate;
 import org.springframework.jms.core.MessageCreator;

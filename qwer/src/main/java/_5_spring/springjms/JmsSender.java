@@ -1,6 +1,6 @@
 package _5_spring.springjms;
 
-import _5_spring.spring01.Student;
+import _5_spring.java8.guava.Student;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
