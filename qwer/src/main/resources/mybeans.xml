@@ -10,11 +10,11 @@
                         http://www.springframework.org/schema/aop
                         https://www.springframework.org/schema/aop/spring-aop.xsd">
 
+    <bean id="accountService"
+          class="_5_spring.spring._0myspring.service.AccountServiceImpl"></bean>
 
-
-
-
-
+    <bean id="accountDao"
+          class="_5_spring.spring._0myspring.dao.AccountDaoImpl"></bean>
 </beans>
 
 
