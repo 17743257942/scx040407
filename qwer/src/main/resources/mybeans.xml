@@ -9,12 +9,76 @@
                         http://www.springframework.org/schema/context/spring-context-3.2.xsd
                         http://www.springframework.org/schema/aop
                         https://www.springframework.org/schema/aop/spring-aop.xsd">
-
+    <!--scope = singleton prototype request session global-session(负载均衡) -->
     <bean id="accountService"
-          class="_5_spring.spring._0myspring.service.AccountServiceImpl"></bean>
+          class="_5_spring.spring._0myspring.service.AccountServiceImpl"
+          scope="prototype"
+          init-method="init"
+          destroy-method="destroy">
+        <constructor-arg name="name" value="qwer"></constructor-arg>
+        <constructor-arg name="age" value="22"></constructor-arg>
+        <constructor-arg name="birthday" ref="now"></constructor-arg>
+        <property name="myStrs">
+            <array>
+                <value>AAA</value>
+                <value>BBB</value>
+                <value>CCC</value>
+            </array>
+        </property>
+        <property name="myList">
+            <list>
+                <value>AAA</value>
+                <value>BBB</value>
+                <value>CCC</value>
+            </list>
+        </property>
+        <property name="mySet">
+            <set>
+                <value>AAA</value>
+                <value>BBB</value>
+                <value>CCC</value>
+            </set>
+        </property>
+        <property name="myMap">
+            <map>
+                <entry key="aa" value="aaaa"></entry>
+                <entry key="bb">
+                    <value>bbbb</value>
+                </entry>
+                <entry key="cc" value="cccc"></entry>
+            </map>
+        </property>
+        <property name="myProps">
+            <props>
+                <prop key="aa">aaaa</prop>
+                <prop key="bb">bbbb</prop>
+                <prop key="cc">cccc</prop>
+            </props>
+        </property>
 
+    </bean>
+
+    <bean id="now" class="java.util.Date"/>
+
+
+    <!--构造函数创建bean-->
     <bean id="accountDao"
-          class="_5_spring.spring._0myspring.dao.AccountDaoImpl"></bean>
+          class="_5_spring.spring._0myspring.dao.AccountDaoImpl">
+        <property name="runner" ref="runner"/>
+    </bean>
+    <bean id="runner" class="org.apache.commons.dbutils.QueryRunner"/>
+
+    <!--普通工厂创建bean-->
+    <!--<bean id="instanceFactory"-->
+    <!--class="_5_spring.spring._0myspring.app.InstanceFactory"></bean>-->
+    <!--<bean id="accountService2" factory-bean="instanceFactory"-->
+    <!--factory-method="getAccountService"></bean>-->
+    <!--静态工厂创建bean-->
+    <!--<bean id="accountService3"-->
+    <!--class="_5_spring.spring._0myspring.app.StaticFactory"-->
+    <!--factory-method="getAccountService"></bean>-->
+
+
 </beans>
 
 

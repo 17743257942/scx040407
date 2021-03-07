@@ -7,12 +7,15 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Client {
     public static void main(String[] args) {
-        ApplicationContext ac = new ClassPathXmlApplicationContext("mybeans.xml");
+        ClassPathXmlApplicationContext ac = new ClassPathXmlApplicationContext("mybeans.xml");
         IAccountService as = (IAccountService) ac.getBean("accountService");
         IAccountDao adao = ac.getBean("accountDao", IAccountDao.class);
 
         System.out.println(as);
-//        System.out.println(as);
+        System.out.println(as);
         System.out.println(adao);
+        ac.close();
+
+
     }
 }

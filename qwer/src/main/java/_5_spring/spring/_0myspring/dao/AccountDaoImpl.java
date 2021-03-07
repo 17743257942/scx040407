@@ -6,15 +6,26 @@ import org.apache.commons.dbutils.handlers.BeanHandler;
 import org.apache.commons.dbutils.handlers.BeanListHandler;
 
 import java.sql.SQLException;
+import java.util.Date;
 import java.util.List;
 
 public class AccountDaoImpl implements IAccountDao {
 
-
     private QueryRunner runner;
+
+    public AccountDaoImpl() {
+        System.out.println("AccountDaoImpl obj has been created ... ");
+    }
 
     public void setRunner(QueryRunner runner) {
         this.runner = runner;
+    }
+
+    @Override
+    public String toString() {
+        return "AccountDaoImpl{" +
+                "runner=" + runner +
+                '}';
     }
 
     @Override
