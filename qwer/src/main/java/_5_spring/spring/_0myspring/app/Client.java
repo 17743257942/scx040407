@@ -12,7 +12,7 @@ public class Client {
         IAccountDao adao = ac.getBean("accountDao", IAccountDao.class);
 
         System.out.println(as);
-        System.out.println(as);
+//        System.out.println(as);
         System.out.println(adao);
         ac.close();
 

@@ -55,6 +55,7 @@
                 <prop key="cc">cccc</prop>
             </props>
         </property>
+        <property name="accountDao" ref="accountDao"/>
 
     </bean>
 
