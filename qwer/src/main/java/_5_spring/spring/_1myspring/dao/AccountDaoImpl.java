@@ -9,17 +9,15 @@ import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+
 @Repository("accountDao")
 public class AccountDaoImpl implements IAccountDao {
-//    @Autowired
+
+    @Autowired
     private QueryRunner runner;
 
     public AccountDaoImpl() {
         System.out.println("AccountDaoImpl obj has been created ... ");
-    }
-
-    public void setRunner(QueryRunner runner) {
-        this.runner = runner;
     }
 
     @Override

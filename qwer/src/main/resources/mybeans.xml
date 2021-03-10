@@ -63,11 +63,19 @@
 
 
     <!--构造函数创建bean-->
-    <bean id="accountDao"
-          class="_5_spring.spring._0myspring.dao.AccountDaoImpl">
+    <bean id="accountDao" class="_5_spring.spring._0myspring.dao.AccountDaoImpl">
         <property name="runner" ref="runner"/>
     </bean>
-    <bean id="runner" class="org.apache.commons.dbutils.QueryRunner"/>
+    <bean id="runner" class="org.apache.commons.dbutils.QueryRunner" scope="prototype">
+        <constructor-arg name="ds" ref="dataSource"></constructor-arg>
+    </bean>
+    
+    <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+        <property name="driverClass" value="com.mysql.jdbc.Driver"/>
+        <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/test"/>
+        <property name="user" value="root"/>
+        <property name="password" value="root"/>
+    </bean>
 
     <!--普通工厂创建bean-->
     <!--<bean id="instanceFactory"-->
