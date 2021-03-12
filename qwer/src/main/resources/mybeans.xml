@@ -63,14 +63,17 @@
 
 
     <!--构造函数创建bean-->
-    <bean id="accountDao" class="_5_spring.spring._0myspring.dao.AccountDaoImpl">
+    <bean id="accountDao"
+          class="_5_spring.spring._0myspring.dao.AccountDaoImpl">
         <property name="runner" ref="runner"/>
     </bean>
-    <bean id="runner" class="org.apache.commons.dbutils.QueryRunner" scope="prototype">
+    <bean id="runner" class="org.apache.commons.dbutils.QueryRunner"
+          scope="prototype">
         <constructor-arg name="ds" ref="dataSource"></constructor-arg>
     </bean>
-    
-    <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+
+    <bean id="dataSource"
+          class="com.mchange.v2.c3p0.ComboPooledDataSource">
         <property name="driverClass" value="com.mysql.jdbc.Driver"/>
         <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/test"/>
         <property name="user" value="root"/>
@@ -88,6 +91,21 @@
     <!--factory-method="getAccountService"></bean>-->
 
 
+    <bean id="service"
+          class="_5_spring.spring._2myspring.service.AccountServiceImpl"/>
+
+    <!--1.配置通知bean
+        2.使用aop:config标签表明开始aop的配置
+        3.aspect表示配置切面
+        4.配置通知类型，printLog前置通知
+        5.对指定方法增强 execution( 访问修饰符 包名.包名...类名.方法名(参数列表)) -->
+    <bean id="logger"
+          class="_5_spring.spring._2myspring.utils.Logger"></bean>
+    <aop:config>
+        <aop:aspect id="logAdvice" ref="logger">
+            <aop:before method="printLog" pointcut="execution(public void _5_spring.spring._2myspring.service.AccountServiceImpl.saveAccount)"/>
+        </aop:aspect>
+    </aop:config>
 </beans>
 
 

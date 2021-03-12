@@ -1,4 +1,4 @@
-package _5_spring.spring._1myspring.model;
+package _5_spring.spring._2myspring.model;
 
 import lombok.Data;
 
