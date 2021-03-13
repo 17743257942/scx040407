@@ -101,11 +101,24 @@
         5.对指定方法增强 execution( 访问修饰符 包名.包名...类名.方法名(参数列表)) -->
     <bean id="logger"
           class="_5_spring.spring._2myspring.utils.Logger"></bean>
+
     <aop:config>
+        <!--切入点表达式-->
+        <aop:pointcut id="p1"
+                      expression="execution(* _5_spring.spring._2myspring.service.AccountServiceImpl.*(..))"/>
+
         <aop:aspect id="logAdvice" ref="logger">
-            <aop:before method="printLog" pointcut="execution(public void _5_spring.spring._2myspring.service.AccountServiceImpl.saveAccount)"/>
+            <!--<aop:before method="printLog1" pointcut-ref="p1"/>   &lt;!&ndash;前置&ndash;&gt;-->
+            <!--<aop:after-returning method="printLog2"-->
+                                 <!--pointcut-ref="p1"/>             &lt;!&ndash;后置&ndash;&gt;-->
+            <!--<aop:after-throwing method="printLog3"-->
+                                <!--pointcut-ref="p1"/>              &lt;!&ndash;异常&ndash;&gt;-->
+            <!--<aop:after method="printLog4" pointcut-ref="p1"/>    &lt;!&ndash;最终&ndash;&gt;-->
+            <aop:around method="around" pointcut-ref="p1"/>      <!--环绕-->
         </aop:aspect>
+
     </aop:config>
+
 </beans>
 
 

@@ -14,9 +14,12 @@ public class Client {
         IAccountService as = (IAccountService) ac.getBean("accountService");
         IAccountDao adao = ac.getBean("accountDao", IAccountDao.class);
 
+        System.out.println("1111111111");
         System.out.println(as);
+        System.out.println("2222222222");
 //        System.out.println(as);
         System.out.println(adao);
+        System.out.println("3333333333");
 //        ac.close();
         List<Account> result = as.findAll();
         System.out.println(result);
