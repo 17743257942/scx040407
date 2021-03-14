@@ -1,4 +1,4 @@
-package _5_spring.spring;
+package _5_spring.spring.spring;
 
 import _5_spring.java8.guava.Student;
 import _5_spring.spring.aop.ISchool;

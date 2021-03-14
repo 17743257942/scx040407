@@ -6,8 +6,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 
 @Service("service")
+@Transactional(propagation = Propagation.REQUIRED, readOnly = false)
 public class AccountServiceImpl implements IAccountService {
 
     @Autowired
@@ -32,6 +35,7 @@ public class AccountServiceImpl implements IAccountService {
     }
 
     @Override
+    @Transactional(timeout = 100000, propagation = Propagation.SUPPORTS)
     public void transfer(int source, int target, Float money) {
         System.out.println("----transfer----44444----");
         Account sAccount = accountDao.findOne(source);
@@ -39,7 +43,7 @@ public class AccountServiceImpl implements IAccountService {
         sAccount.setMoney(sAccount.getMoney() - money);
         tAccount.setMoney(tAccount.getMoney() + money);
         accountDao.update(sAccount);
-//        System.out.println(1 / 0);
+        System.out.println(1 / 0);
         accountDao.update(tAccount);
     }
 

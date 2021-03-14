@@ -22,7 +22,7 @@
         <property name="name" value="KK100" />
     </bean>
     
-    <bean id="class1" class="_5_spring.spring.Klass">
+    <bean id="class1" class="_5_spring.spring.spring.Klass">
         <property name="students">
             <list>
                 <ref bean="student100" />
@@ -39,9 +39,9 @@
     <context:component-scan base-package="_5_spring.spring" />
     
     
-    <bean id="aop1" class="_5_spring.spring.Aop1" />
+    <bean id="aop1" class="_5_spring.spring.spring.Aop1" />
     
-    <bean id="aop2" class="_5_spring.spring.Aop2" />
+    <bean id="aop2" class="_5_spring.spring.spring.Aop2" />
     
 <!--    <aop:aspectj-autoproxy proxy-target-class="true" />-->
     <aop:aspectj-autoproxy  />
@@ -57,7 +57,7 @@
 
 <!--    <context:annotation-config />-->
 <!--    -->
-    <bean id="school" class="_5_spring.spring.School"></bean>
+    <bean id="school" class="_5_spring.spring.spring.School"></bean>
     
     
 </beans>
