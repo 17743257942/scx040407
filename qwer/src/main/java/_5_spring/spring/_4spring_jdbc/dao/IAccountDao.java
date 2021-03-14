@@ -1,6 +1,6 @@
 package _5_spring.spring._4spring_jdbc.dao;
 
-import _5_spring.spring._1myspring.model.Account;
+import _5_spring.spring._4spring_jdbc.model.Account;
 
 import java.util.List;
 

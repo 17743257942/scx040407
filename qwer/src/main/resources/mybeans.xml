@@ -3,12 +3,15 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:context="http://www.springframework.org/schema/context"
        xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
                         http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
                         http://www.springframework.org/schema/context
                         http://www.springframework.org/schema/context/spring-context-3.2.xsd
                         http://www.springframework.org/schema/aop
-                        https://www.springframework.org/schema/aop/spring-aop.xsd">
+                        https://www.springframework.org/schema/aop/spring-aop.xsd
+                        http://www.springframework.org/schema/tx
+                        https://www.springframework.org/schema/tx/spring-tx.xsd">
     <!--scope = singleton prototype request session global-session(负载均衡) -->
     <bean id="accountService"
           class="_5_spring.spring._0myspring.service.AccountServiceImpl"
@@ -110,15 +113,35 @@
         <aop:aspect id="logAdvice" ref="logger">
             <!--<aop:before method="printLog1" pointcut-ref="p1"/>   &lt;!&ndash;前置&ndash;&gt;-->
             <!--<aop:after-returning method="printLog2"-->
-                                 <!--pointcut-ref="p1"/>             &lt;!&ndash;后置&ndash;&gt;-->
+            <!--pointcut-ref="p1"/>             &lt;!&ndash;后置&ndash;&gt;-->
             <!--<aop:after-throwing method="printLog3"-->
-                                <!--pointcut-ref="p1"/>              &lt;!&ndash;异常&ndash;&gt;-->
+            <!--pointcut-ref="p1"/>              &lt;!&ndash;异常&ndash;&gt;-->
             <!--<aop:after method="printLog4" pointcut-ref="p1"/>    &lt;!&ndash;最终&ndash;&gt;-->
             <aop:around method="around" pointcut-ref="p1"/>      <!--环绕-->
         </aop:aspect>
 
     </aop:config>
 
+
+    <!--配置事务管理器-->
+    <bean id="transactionManager"
+          class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+    <!--配置事务通知-->
+    <tx:advice id="txAdvice" transaction-manager="transactionManager">
+        <tx:attributes>
+            <tx:method name="*" propagation="REQUIRED" read-only="false"/>
+        </tx:attributes>
+    </tx:advice>
+
+    <aop:config>
+        <aop:pointcut id="p2"
+                      expression="execution(* _5_spring.spring._2myspring_aop.service.AccountServiceImpl.*(..))"/>
+        <!--建立切入点表达式和事务通知的关系-->
+        <aop:advisor advice-ref="txAdvice" pointcut-ref="p2"/>
+    </aop:config>
 </beans>
 
 
