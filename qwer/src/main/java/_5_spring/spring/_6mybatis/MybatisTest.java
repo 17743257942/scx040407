@@ -7,11 +7,17 @@ import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 
+import java.io.IOException;
 import java.io.InputStream;
+import java.util.Date;
 import java.util.List;
 
 public class MybatisTest {
     public static void main(String[] args) throws Exception {
+        testCRUD();
+    }
+
+    private static void demo() throws IOException {
         //1.读取配置文件
         InputStream in = Resources.getResourceAsStream("SqlMapConfig.xml");
         //2.创建SqlSessionFactory工厂
@@ -29,5 +35,35 @@ public class MybatisTest {
         //6.释放资源
         session.close();
         in.close();
+    }
+
+    public static void testCRUD() throws Exception {
+        InputStream in = Resources.getResourceAsStream("SqlMapConfig.xml");
+        SqlSessionFactoryBuilder builder = new SqlSessionFactoryBuilder();
+        SqlSessionFactory factory = builder.build(in);
+        SqlSession session = factory.openSession();
+        IUserDao userDao = session.getMapper(IUserDao.class);
+        // select All
+//        List<User> users = userDao.findAll();
+//        for (User user : users) {
+//            System.out.println(user);
+//        }
+        // save
+//        User user = new User(11,"asdf",new Date(),"男","xx路xx号");
+//        userDao.saveUser(user);
+//        session.commit();
+
+        //update
+//        User user1 = new User(51,"asdf2",new Date(),"男","xx路xx号");
+//        userDao.updateUser(user1);
+//        session.commit();
+
+        //delete
+//        userDao.deleteUser(51);
+//        session.commit();
+
+        session.close();
+        in.close();
+
     }
 }
