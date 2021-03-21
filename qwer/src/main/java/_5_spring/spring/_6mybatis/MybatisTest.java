@@ -1,6 +1,7 @@
 package _5_spring.spring._6mybatis;
 
 import _5_spring.spring._6mybatis.dao.IUserDao;
+import _5_spring.spring._6mybatis.domain.QueryVo;
 import _5_spring.spring._6mybatis.domain.User;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
@@ -61,6 +62,27 @@ public class MybatisTest {
         //delete
 //        userDao.deleteUser(51);
 //        session.commit();
+
+        //findOne
+//        User result = userDao.findOne(41);
+//        System.out.println(result);
+
+        //findByName
+//        List<User> users = userDao.findByName("%王%");
+//        for (User user : users) {
+//            System.out.println(user);
+//        }
+
+        //findUserByVo
+        User user = new User();
+        user.setUsername("%王%");
+        QueryVo vo = new QueryVo();
+        vo.setUser(user);
+        List<User> users = userDao.findUserByVo(vo);
+        for (User u : users) {
+            System.out.println(u);
+        }
+
 
         session.close();
         in.close();

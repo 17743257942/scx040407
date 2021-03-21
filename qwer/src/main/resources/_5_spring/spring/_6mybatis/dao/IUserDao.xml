@@ -9,6 +9,25 @@
             resultType="_5_spring.spring._6mybatis.domain.User">
         select * from user
     </select>
+    <select id="findOne"
+            resultType="_5_spring.spring._6mybatis.domain.User"
+            parameterType="java.lang.Integer">
+        select * from user where id=#{id}
+    </select>
+    <select id="findByName"
+            resultType="_5_spring.spring._6mybatis.domain.User"
+            parameterType="java.lang.String">
+        select * from user where username like #{name}
+        <!-- select * from user where username like '%${value}%' -->
+    </select>
+
+    <!--根据vo中的条件查询-->
+    <select id="findUserByVo"
+            parameterType="_5_spring.spring._6mybatis.domain.QueryVo"
+            resultType="_5_spring.spring._6mybatis.domain.User">
+        select * from user where username like #{user.username}
+    </select>
+
     <!--保存用户-->
     <insert id="saveUser"
             parameterType="_5_spring.spring._6mybatis.domain.User">
@@ -26,4 +45,6 @@
     <delete id="deleteUser" parameterType="java.lang.Integer">
         delete from user where id=#{id}
     </delete>
+
+
 </mapper>
