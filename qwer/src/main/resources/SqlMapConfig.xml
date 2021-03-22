@@ -9,10 +9,14 @@
     <properties resource="jdbc.properties">
         <!--<property name="driver" value="com.mysql.jdbc.Driver"/>-->
         <!--<property name="url"-->
-                  <!--value="jdbc:mysql://localhost:3306/scx040407"/>-->
+        <!--value="jdbc:mysql://localhost:3306/scx040407"/>-->
         <!--<property name="username" value="root"/>-->
         <!--<property name="password" value="root"/>-->
     </properties>
+
+    <typeAliases>
+        <package name="_5_spring.spring._6mybatis.domain"/>
+    </typeAliases>
 
     <!--配置环境-->
     <environments default="mysql">
@@ -37,5 +41,6 @@
         <!--<mapper class="_5_spring.spring._6mybatis.dao.IUserDao"></mapper>-->
         <!--指定了package之后可以不写mapper-->
         <package name="_5_spring.spring._6mybatis.dao"/>
+
     </mappers>
 </configuration>

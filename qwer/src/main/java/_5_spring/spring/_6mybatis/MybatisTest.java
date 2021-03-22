@@ -1,6 +1,8 @@
 package _5_spring.spring._6mybatis;
 
 import _5_spring.spring._6mybatis.dao.IUserDao;
+import _5_spring.spring._6mybatis.domain.Account;
+import _5_spring.spring._6mybatis.domain.AccountUser;
 import _5_spring.spring._6mybatis.domain.QueryVo;
 import _5_spring.spring._6mybatis.domain.User;
 import org.apache.ibatis.io.Resources;
@@ -10,6 +12,8 @@ import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 
@@ -74,14 +78,35 @@ public class MybatisTest {
 //        }
 
         //findUserByVo
-        User user = new User();
-        user.setUsername("%王%");
-        QueryVo vo = new QueryVo();
-        vo.setUser(user);
-        List<User> users = userDao.findUserByVo(vo);
-        for (User u : users) {
-            System.out.println(u);
+//        User user = new User();
+//        user.setUsername("%王%");
+//        QueryVo vo = new QueryVo();
+//        vo.setUser(user);
+//        List<User> users = userDao.findUserByVo(vo);
+//        for (User u : users) {
+//            System.out.println(u);
+//        }
+
+        //findUserByVo2
+//        QueryVo vo = new QueryVo();
+//        vo.setIds(new ArrayList<>(Arrays.asList(41, 42, 43)));
+//        System.out.println(vo);
+//        List<User> users = userDao.findUserByVo2(vo);
+//        for (User u : users) {
+//            System.out.println(u);
+//        }
+
+        // select All2
+        List<Account> accounts = userDao.findAll2();
+        for (Account account : accounts) {
+            System.out.println(account);
         }
+
+        // select All3
+//        List<AccountUser> accountUsers = userDao.findAll3();
+//        for (AccountUser accountUser : accountUsers) {
+//            System.out.println(accountUser);
+//        }
 
 
         session.close();

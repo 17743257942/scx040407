@@ -1,5 +1,7 @@
 package _5_spring.spring._6mybatis.dao;
 
+import _5_spring.spring._6mybatis.domain.Account;
+import _5_spring.spring._6mybatis.domain.AccountUser;
 import _5_spring.spring._6mybatis.domain.QueryVo;
 import _5_spring.spring._6mybatis.domain.User;
 import org.apache.ibatis.annotations.Select;
@@ -21,4 +23,12 @@ public interface IUserDao {
     List<User> findByName(String name);
 
     List<User> findUserByVo(QueryVo vo);
+
+    List<User> findUserByVo2(QueryVo vo);
+
+    List<Account> findAll2();
+
+    List<AccountUser> findAll3();
+
+
 }
