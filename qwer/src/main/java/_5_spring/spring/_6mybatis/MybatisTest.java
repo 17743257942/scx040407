@@ -39,6 +39,7 @@ public class MybatisTest {
         in.close();
     }
 
+
     public static void testCRUD() throws Exception {
         InputStream in = Resources.getResourceAsStream("SqlMapConfig.xml");
         SqlSessionFactoryBuilder builder = new SqlSessionFactoryBuilder();
