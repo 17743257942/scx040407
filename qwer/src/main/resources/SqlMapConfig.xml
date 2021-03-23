@@ -13,6 +13,11 @@
         <!--<property name="username" value="root"/>-->
         <!--<property name="password" value="root"/>-->
     </properties>
+    
+    <settings>
+        <setting name="lazyLoadingEnabled" value="true"/>
+        <setting name="aggressiveLazyLoading" value="false"/>
+    </settings>
 
     <typeAliases>
         <package name="_5_spring.spring._6mybatis.domain"/>
