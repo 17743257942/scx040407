@@ -1,10 +1,7 @@
 package _5_spring.spring._6mybatis;
 
 import _5_spring.spring._6mybatis.dao.IUserDao;
-import _5_spring.spring._6mybatis.domain.Account;
-import _5_spring.spring._6mybatis.domain.AccountUser;
-import _5_spring.spring._6mybatis.domain.QueryVo;
-import _5_spring.spring._6mybatis.domain.User;
+import _5_spring.spring._6mybatis.domain.*;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -97,15 +94,27 @@ public class MybatisTest {
 //        }
 
         // select All2
-        List<Account> accounts = userDao.findAll2();
-        for (Account account : accounts) {
-            System.out.println(account);
-        }
+//        List<Account> accounts = userDao.findAll2();
+//        for (Account account : accounts) {
+//            System.out.println(account);
+//        }
 
         // select All3
 //        List<AccountUser> accountUsers = userDao.findAll3();
 //        for (AccountUser accountUser : accountUsers) {
 //            System.out.println(accountUser);
+//        }
+
+        // select All4
+//        List<User> users = userDao.findAll4();
+//        for (User user : users) {
+//            System.out.println(user);
+//        }
+
+        // select All5
+//        List<Role> roles = userDao.findAll5();
+//        for (Role role : roles) {
+//            System.out.println(role);
 //        }
 
 

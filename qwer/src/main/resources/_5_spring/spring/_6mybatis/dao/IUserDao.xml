@@ -5,12 +5,12 @@
 <!--写上全限定类名-->
 <mapper namespace="_5_spring.spring._6mybatis.dao.IUserDao">
 
-    <!--定义封装account和user的resultMap-->
+    <!-- 一对一 定义封装account的resultMap-->
     <resultMap id="accountUserMap" type="account">
         <id property="id" column="aid"></id>
         <result property="uid" column="uid"></result>
         <result property="money" column="money"></result>
-        <association property="user" column="uid" javaType="_5_spring.spring._6mybatis.domain.User">
+        <association property="user" javaType="user">
             <id property="id" column="id"/>
             <result column="username" property="username"/>
             <result column="address" property="address"/>
@@ -19,19 +19,47 @@
         </association>
     </resultMap>
 
+    <!-- 一对多 定义user的resultMap-->
+    <resultMap id="userAccountMap" type="user">
+        <id property="id" column="id"></id>
+        <result property="username" column="username"></result>
+        <result property="birthday" column="birthday"></result>
+        <result property="sex" column="sex"></result>
+        <result property="address" column="address"></result>
+        <collection property="accounts" ofType="account">
+            <id property="id" column="aid"/>
+            <result column="uid" property="uid"/>
+            <result column="money" property="money"/>
+        </collection>
+    </resultMap>
+
+    <!-- 多对多 定义role的resultMap-->
+    <resultMap id="roleMap" type="role">
+        <id property="id" column="rid"></id>
+        <result property="roleName" column="ROLE_NAME"></result>
+        <result property="roleDesc" column="ROLE_DESC"></result>
+        <collection property="users" ofType="user">
+            <id property="id" column="id"></id>
+            <result property="username" column="username"></result>
+            <result property="birthday" column="birthday"></result>
+            <result property="sex" column="sex"></result>
+            <result property="address" column="address"></result>
+        </collection>
+    </resultMap>
+
 
     <!--配置查询所有 id是方法名称-->
     <select id="findAll"
-            resultType="_5_spring.spring._6mybatis.domain.User">
+            resultType="user">
         select * from user
     </select>
     <select id="findOne"
-            resultType="_5_spring.spring._6mybatis.domain.User"
+            resultType="user"
             parameterType="java.lang.Integer">
         select * from user where id=#{id}
     </select>
     <select id="findByName"
-            resultType="_5_spring.spring._6mybatis.domain.User"
+            resultType="user"
             parameterType="java.lang.String">
         select * from user where username like #{name}
         <!-- select * from user where username like '%${value}%' -->
@@ -43,21 +71,22 @@
     </select>
 
     <select id="findAll3"
-            resultType="_5_spring.spring._6mybatis.domain.AccountUser">
+            resultType="accountUser">
         select a.* ,u.username,u.address from account a,user u where
         a.uid=u.id
     </select>
 
     <!--根据vo中的条件查询-->
     <select id="findUserByVo"
-            parameterType="_5_spring.spring._6mybatis.domain.QueryVo"
-            resultType="_5_spring.spring._6mybatis.domain.User">
+            parameterType="queryVo"
+            resultType="user">
         select * from user where username like #{user.username}
     </select>
 
+
     <select id="findUserByVo2"
-            parameterType="_5_spring.spring._6mybatis.domain.QueryVo"
-            resultType="_5_spring.spring._6mybatis.domain.User">
+            parameterType="queryVo"
+            resultType="user">
         select * from user
         <where>
             <if test="ids != null and ids.size()>0">
@@ -69,16 +98,25 @@
         </where>
     </select>
 
+    <select id="findAll4" resultMap="userAccountMap">
+        select u.*,a.id as aid,a.uid,a.money from user u left outer join
+        account a on u.id=a.uid
+    </select>
+
+    <select id="findAll5" resultMap="roleMap">
+        select u.*,r.id rid,r.role_name,r.role_desc from role r left join
+        user_role ur on r.id=ur.rid left join user u on u.id=ur.uid
+    </select>
 
     <!--保存用户-->
     <insert id="saveUser"
-            parameterType="_5_spring.spring._6mybatis.domain.User">
+            parameterType="user">
         insert into `user`(`username`,`birthday`,`sex`,`address`) values
         (#{username},#{birthday},#{sex},#{address});
     </insert>
     <!--更新用户-->
     <insert id="updateUser"
-            parameterType="_5_spring.spring._6mybatis.domain.User">
+            parameterType="user">
         update user set
         username=#{username},birthday=#{birthday},sex=#{sex},address=#{address}
         where id=#{id}

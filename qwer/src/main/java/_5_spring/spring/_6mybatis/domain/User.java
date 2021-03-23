@@ -7,6 +7,7 @@ import lombok.ToString;
 
 import java.io.Serializable;
 import java.util.Date;
+import java.util.List;
 
 @Data
 @ToString
@@ -19,5 +20,5 @@ public class User implements Serializable {
     private Date birthday;
     private String sex;
     private String address;
-
+    List<Account> accounts;
 }
