@@ -18,10 +18,10 @@ public class RunnerMain {
 
         thread2.interrupt();  // i = true
 
-        System.out.println(Thread.activeCount());
+        System.out.println("1111111111111=="+Thread.activeCount());
         
         Thread.currentThread().getThreadGroup().list();
-        System.out.println(Thread.currentThread().getThreadGroup().getParent().activeGroupCount());
+        System.out.println("2222222222222=="+Thread.currentThread().getThreadGroup().getParent().activeGroupCount());
         Thread.currentThread().getThreadGroup().getParent().list();
     
         
