@@ -109,14 +109,13 @@
     </select>
 
     <!--保存用户-->
-    <insert id="saveUser"
-            parameterType="user">
+    <insert id="saveUser" parameterType="user">
+        <selectKey></selectKey>
         insert into `user`(`username`,`birthday`,`sex`,`address`) values
         (#{username},#{birthday},#{sex},#{address});
     </insert>
     <!--更新用户-->
-    <insert id="updateUser"
-            parameterType="user">
+    <insert id="updateUser" parameterType="user">
         update user set
         username=#{username},birthday=#{birthday},sex=#{sex},address=#{address}
         where id=#{id}
