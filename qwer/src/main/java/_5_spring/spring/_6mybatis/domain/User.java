@@ -14,6 +14,13 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 public class User implements Serializable {
+    public User(Integer id, String username, Date birthday, String sex, String address) {
+        this.id = id;
+        this.username = username;
+        this.birthday = birthday;
+        this.sex = sex;
+        this.address = address;
+    }
 
     private Integer id;
     private String username;

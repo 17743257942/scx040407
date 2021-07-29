@@ -47,22 +47,23 @@ public class MybatisTest {
         SqlSession session = factory.openSession();
         IUserDao userDao = session.getMapper(IUserDao.class);
         // select All
-//        List<User> users = userDao.findAll();
-//        for (User user : users) {
-//            System.out.println(user);
-//        }
+        List<User> users = userDao.findAll();
+        for (User user : users) {
+            System.out.println(user);
+        }
+        System.out.println("=======testCRUD==========");
         // save
 //        User user = new User(11,"asdf",new Date(),"男","xx路xx号");
 //        userDao.saveUser(user);
 //        session.commit();
 
         //update
-//        User user1 = new User(51,"asdf2",new Date(),"男","xx路xx号");
+//        User user1 = new User(49,"asdf2",new Date(),"男","xx路xx号");
 //        userDao.updateUser(user1);
 //        session.commit();
 
         //delete
-//        userDao.deleteUser(51);
+//        userDao.deleteUser(49);
 //        session.commit();
 
         //findOne
@@ -70,54 +71,60 @@ public class MybatisTest {
 //        System.out.println(result);
 
         //findByName
-//        List<User> users = userDao.findByName("%王%");
-//        for (User user : users) {
-//            System.out.println(user);
-//        }
+        List<User> users2 = userDao.findByName("%王%");
+        for (User user : users2) {
+            System.out.println(user);
+        }
+        System.out.println("=======findByName==========");
 
         //findUserByVo
-//        User user = new User();
-//        user.setUsername("%王%");
-//        QueryVo vo = new QueryVo();
-//        vo.setUser(user);
-//        List<User> users = userDao.findUserByVo(vo);
-//        for (User u : users) {
-//            System.out.println(u);
-//        }
+        User user = new User();
+        user.setUsername("%王%");
+        QueryVo vo = new QueryVo();
+        vo.setUser(user);
+        List<User> users3 = userDao.findUserByVo(vo);
+        for (User u : users3) {
+            System.out.println(u);
+        }
+        System.out.println("=======findUserByVo==========");
 
         //findUserByVo2
-//        QueryVo vo = new QueryVo();
-//        vo.setIds(new ArrayList<>(Arrays.asList(41, 42, 43)));
-//        System.out.println(vo);
-//        List<User> users = userDao.findUserByVo2(vo);
-//        for (User u : users) {
-//            System.out.println(u);
-//        }
+        QueryVo vo2 = new QueryVo();
+        vo.setIds(new ArrayList<>(Arrays.asList(41, 42, 43)));
+        System.out.println(vo);
+        List<User> users4 = userDao.findUserByVo2(vo);
+        for (User u : users4) {
+            System.out.println(u);
+        }
+        System.out.println("=======findUserByVo2==========");
 
         // select All2
-//        List<Account> accounts = userDao.findAll2();
-//        for (Account account : accounts) {
-//            System.out.println(account);
-//        }
+        List<Account> accounts = userDao.findAll2();
+        for (Account account : accounts) {
+            System.out.println(account);
+        }
+        System.out.println("======select All2===========");
 
         // select All3
-//        List<AccountUser> accountUsers = userDao.findAll3();
-//        for (AccountUser accountUser : accountUsers) {
-//            System.out.println(accountUser);
-//        }
+        List<AccountUser> accountUsers = userDao.findAll3();
+        for (AccountUser accountUser : accountUsers) {
+            System.out.println(accountUser);
+        }
+        System.out.println("======select All3===========");
 
         // select All4
-//        List<User> users = userDao.findAll4();
-//        for (User user : users) {
-//            System.out.println(user);
-//        }
+        List<User> users5 = userDao.findAll4();
+        for (User u : users5) {
+            System.out.println(u);
+        }
+        System.out.println("=======select All4==========");
 
         // select All5
-//        List<Role> roles = userDao.findAll5();
-//        for (Role role : roles) {
-//            System.out.println(role);
-//        }
-
+        List<Role> roles = userDao.findAll5();
+        for (Role role : roles) {
+            System.out.println(role);
+        }
+        System.out.println("======select All5===========");
 
         session.close();
         in.close();
