@@ -51,7 +51,7 @@ public class MybatisTest {
         for (User user : users) {
             System.out.println(user);
         }
-        System.out.println("=======testCRUD==========");
+        System.out.println("=======select All==========");
         // save
 //        User user = new User(11,"asdf",new Date(),"男","xx路xx号");
 //        userDao.saveUser(user);
