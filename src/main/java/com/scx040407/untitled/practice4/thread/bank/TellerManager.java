@@ -1,6 +1,5 @@
 package com.scx040407.untitled.practice4.thread.bank;
 
-import com.scx040407.untitled.practice2.gen.test.Te;
 
 import java.util.LinkedList;
 import java.util.PriorityQueue;
@@ -10,7 +9,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.TimeUnit;
 
 /**
- * 2018/07/23 обнГ 10:26
+ * 2018/07/23 О©╫О©╫О©╫О©╫ 10:26
  */
 public class TellerManager implements Runnable {
     private ExecutorService exec;
