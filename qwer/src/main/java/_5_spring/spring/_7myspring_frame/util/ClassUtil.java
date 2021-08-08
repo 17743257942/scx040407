@@ -4,6 +4,8 @@ import lombok.extern.slf4j.Slf4j;
 
 import java.io.File;
 import java.io.FileFilter;
+import java.lang.reflect.Constructor;
+import java.lang.reflect.InvocationTargetException;
 import java.net.URL;
 import java.util.HashSet;
 import java.util.Set;
@@ -105,8 +107,25 @@ public class ClassUtil {
         return Thread.currentThread().getContextClassLoader();
     }
 
+    /**
+     * 实例化class
+     * accessible true私有
+     */
+    public static <T> T newInstance(Class<?> clazz, boolean accessible) {
+        try {
+            Constructor constructor = clazz.getDeclaredConstructor();
+            constructor.setAccessible(accessible);
+            return (T) constructor.newInstance();
+        } catch (Exception e) {
+            log.error("newInstance error: ", e);
+            throw new RuntimeException();
+        }
+    }
+
     public static void main(String[] args) {
         /**
+         * packageName =
+         * _5_spring.spring._6mybatis.domain
          * url =
          * file:/E:/codes/scx040407/qwer/target/classes/_5_spring/spring/_6mybatis/domain
          * packageDir =
