@@ -26,7 +26,9 @@ public class Test1 {
     @Test
     public void loadBeansTest() {
         Assertions.assertEquals(false, beanContainer.isLoaded());
-        beanContainer.loadBeans("");
+        beanContainer.loadBeans("_5_spring.spring._6mybatis.domain");
+        Assertions.assertEquals(1, beanContainer.size());
+        Assertions.assertEquals(true, beanContainer.isLoaded());
     }
 
 

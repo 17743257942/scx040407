@@ -1,5 +1,7 @@
 package _5_spring.spring._6mybatis.domain;
 
+import _5_spring.spring._7myspring_frame.annotation.Controller;
+import _5_spring.spring._7myspring_frame.annotation.Repository;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -13,6 +15,7 @@ import java.util.List;
 @ToString
 @AllArgsConstructor
 @NoArgsConstructor
+@Repository
 public class User implements Serializable {
     public User(Integer id, String username, Date birthday, String sex, String address) {
         this.id = id;

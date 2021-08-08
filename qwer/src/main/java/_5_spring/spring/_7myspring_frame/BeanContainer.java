@@ -32,8 +32,26 @@ public class BeanContainer {
     //容器是否已经加载过bean
     private boolean loaded = false;
 
+
+    /**
+     * 是否已加载
+     */
     public boolean isLoaded() {
         return loaded;
+    }
+
+    /**
+     * bean实例的数量
+     */
+    public int size() {
+        return beanMap.size();
+    }
+
+    /**
+     * 对外暴露beanMap
+     */
+    public Map<Class<?>, Object> getBeanMap() {
+        return beanMap;
     }
 
     /**
@@ -78,5 +96,15 @@ public class BeanContainer {
             }
         }
         loaded = true;
+    }
+
+
+    public static void main(String[] args) {
+        BeanContainer beanContainer = BeanContainer.getInstance();
+        beanContainer.loadBeans("_5_spring.spring._6mybatis.domain");
+        Map<Class<?>, Object> map = beanContainer.getBeanMap();
+        for (Class<?> k : map.keySet()) {
+            System.out.println("key=[" + k + "],value=[" + map.get(k) + "]");
+        }
     }
 }
