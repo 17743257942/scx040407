@@ -10,10 +10,7 @@ import lombok.NoArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
 import java.lang.annotation.Annotation;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 
 @Slf4j
@@ -96,6 +93,53 @@ public class BeanContainer {
             }
         }
         loaded = true;
+    }
+
+    /**
+     * 一些增删改查方法
+     */
+    public Object addBean(Class<?> clazz, Object bean) {
+        return beanMap.put(clazz, bean);
+    }
+
+    public Object removeBean(Class<?> clazz) {
+        return beanMap.remove(clazz);
+    }
+
+    public Set<Class<?>> getClasses() {
+        return beanMap.keySet();
+    }
+
+    public Set<Object> getBeans() {
+        return new HashSet<>(beanMap.values());
+    }
+
+    public Set<Class<?>> getClassesByAnnotation(Class<? extends Annotation> annotation) {
+        Set<Class<?>> keySet = getClasses();
+        if (keySet == null || keySet.isEmpty()) {
+            return null;
+        }
+        Set<Class<?>> classSet = new HashSet<>();
+        for (Class<?> clazz : keySet) {
+            if (clazz.isAnnotationPresent(annotation)) {
+                classSet.add(clazz);
+            }
+        }
+        return classSet.size() > 0 ? classSet : null;
+    }
+
+    public Set<Class<?>> getClassesBySuper(Class<?> inerfaceOrClass) {
+        Set<Class<?>> keySet = getClasses();
+        if (keySet == null || keySet.isEmpty()) {
+            return null;
+        }
+        Set<Class<?>> classSet = new HashSet<>();
+        for (Class<?> clazz : keySet) {
+            if (inerfaceOrClass.isAssignableFrom(clazz)) {  //inerfaceOrClass是不是clazz的父类
+                classSet.add(clazz);
+            }
+        }
+        return classSet.size() > 0 ? classSet : null;
     }
 
 

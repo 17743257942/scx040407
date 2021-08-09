@@ -2,6 +2,7 @@ package _5_spring.spring._6mybatis.domain;
 
 import _5_spring.spring._7myspring_frame.annotation.Controller;
 import _5_spring.spring._7myspring_frame.annotation.Repository;
+import _5_spring.spring._7myspring_frame.inject.AutoWired;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -25,10 +26,16 @@ public class User implements Serializable {
         this.address = address;
     }
 
+    @AutoWired
     private Integer id;
+    @AutoWired
     private String username;
+    @AutoWired
     private Date birthday;
+    @AutoWired
     private String sex;
+    @AutoWired
     private String address;
+    @AutoWired
     List<Account> accounts;
 }
