@@ -52,6 +52,54 @@ public class BeanContainer {
     }
 
     /**
+     * 获取实例
+     */
+    public Object getBean(Class<?> clazz) {
+        return beanMap.get(clazz);
+    }
+
+    /**
+     * 获取字段实例
+     */
+    public Object getFieldInstance(Class<?> fieldClass, String autoWiredValue) {
+        Object fieldValue = getBean(fieldClass);
+        if (fieldValue != null) {
+            return fieldValue;
+        } else {
+            Class<?> implClass = getImplementedClass(fieldClass, autoWiredValue);
+            if (implClass != null) {
+                return getBean(implClass);
+            } else {
+                return null;
+            }
+        }
+
+    }
+
+    /**
+     * 获取实现类
+     */
+    private Class<?> getImplementedClass(Class<?> fieldClass, String autoWiredValue) {
+        Set<Class<?>> classSet = getClassesBySuper(fieldClass);
+        if (ClassUtil.isEmpty(classSet)) {
+            return null;
+        }
+        if (ClassUtil.isEmpty(autoWiredValue)) {
+            if (classSet.size() == 1) {
+                return classSet.iterator().next();
+            } else {
+                throw new RuntimeException("成员变量有多个实现类，需要明确指定名称");
+            }
+        }
+        for (Class<?> clazz : classSet) {
+            if (autoWiredValue.equals(clazz.getSimpleName())) {
+                return clazz;
+            }
+        }
+        return null;
+    }
+
+    /**
      * 使用枚举防御反射，序列化反序列化等方式获取对象
      */
     private enum ContainerHolder {

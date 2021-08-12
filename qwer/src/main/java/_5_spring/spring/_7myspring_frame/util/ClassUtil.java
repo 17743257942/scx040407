@@ -5,9 +5,11 @@ import lombok.extern.slf4j.Slf4j;
 import java.io.File;
 import java.io.FileFilter;
 import java.lang.reflect.Constructor;
-import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Field;
 import java.net.URL;
+import java.util.Collection;
 import java.util.HashSet;
+import java.util.Map;
 import java.util.Set;
 
 /**
@@ -121,6 +123,39 @@ public class ClassUtil {
             throw new RuntimeException();
         }
     }
+
+    /**
+     * 成员变量注入
+     * field成员变量，target类实例，value属性值，accessible私有
+     */
+    public static void setField(Field field, Object target, Object value, boolean accessible) {
+        field.setAccessible(accessible);
+        try {
+            field.set(target, value);
+        } catch (Exception e) {
+            throw new RuntimeException("error:field.set(target,value)");
+        }
+    }
+
+    /**
+     * 判断空
+     */
+    public static boolean isEmpty(Collection e) {
+        return e == null || e.isEmpty();
+    }
+
+    public static boolean isEmpty(Map e) {
+        return e == null || e.isEmpty();
+    }
+
+    public static boolean isEmpty(String e) {
+        return e == null || e == "";
+    }
+
+    public static boolean isEmpty(Object[] e) {
+        return e == null || e.length == 0;
+    }
+
 
     public static void main(String[] args) {
         /**
